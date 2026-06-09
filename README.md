@@ -104,6 +104,40 @@ Entrenando sólo con datos **anteriores** a una fecha y prediciendo los partidos
 
 ---
 
+## 4b. Apuesta combinada "loca" (~50x) + córners/tiros
+
+`src/parlay.py` arma una combinada de cuota objetivo (50x por defecto) eligiendo
+las patas long-shot que el modelo más valora, de partidos distintos, y reporta
+la **probabilidad real de que toda la combinada entre**.
+
+```bash
+python -m src.parlay        # genera outputs/apuesta_loca.csv
+```
+
+- Mercados de **goles** (gana/empate/over 2.5/ambos marcan): salen del modelo
+  validado.
+- Mercados de **córners y tiros al arco**: `src/props.py` los estima de forma
+  **heurística** a partir de promedios por equipo (`data/team_stats.csv`). Son
+  estimaciones, no un modelo validado; los *props de jugador individual* quedan
+  como comodín manual (necesitan datos de alineación).
+
+### Conseguir las stats reales de córners/tiros
+Esta sesión web no tiene internet, así que las stats se bajan **desde una
+máquina con red** (tu PC, vía el CLI o la extensión de Claude Code):
+
+```bash
+python scripts/fetch_stats_sofascore.py   # genera data/team_stats.csv
+python -m src.parlay                       # ahora con datos reales
+```
+
+Si no existe `data/team_stats.csv`, el pipeline usa `data/team_stats_sample.csv`
+(**datos de ejemplo**, solo para demostrar el flujo) y lo avisa. Alternativa más
+fiable que scrapear: la API documentada de **API-Football** (tiene córners,
+tiros y stats de jugadores), o llenar el CSV a mano con ese formato.
+
+> ⚠️ Una combinada ~50x es un **tiro largo por diseño**: el modelo le da ~2 % de
+> probabilidad. Es entretenimiento, no una estrategia de inversión.
+
 ## 5. Cómo correrlo
 
 ```bash
@@ -160,7 +194,11 @@ Mundial/
 │   ├── simulate.py           # Monte Carlo de la fase de grupos
 │   ├── validate.py           # backtesting
 │   ├── export_excel.py       # exportación a .xlsx (marcadores como texto)
+│   ├── props.py              # estimación heurística de córners/tiros
+│   ├── parlay.py             # constructor de la combinada "loca" (~50x)
 │   └── run_pipeline.py       # orquestador (punto de entrada)
+├── scripts/
+│   └── fetch_stats_sofascore.py   # descarga de stats (correr en tu PC)
 ├── requirements.txt
 └── README.md
 ```
