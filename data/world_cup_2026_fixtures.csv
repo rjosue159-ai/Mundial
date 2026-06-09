@@ -1,0 +1,73 @@
+match_date,year,home_team,away_team,city,host_country,neutral
+2026-06-11,2026,Mexico,South Africa,Mexico City,Mexico,False
+2026-06-11,2026,South Korea,Czech Republic,Zapopan,Mexico,True
+2026-06-12,2026,Canada,Bosnia and Herzegovina,Toronto,Canada,False
+2026-06-12,2026,United States,Paraguay,Inglewood,United States,False
+2026-06-13,2026,Qatar,Switzerland,Santa Clara,United States,True
+2026-06-13,2026,Brazil,Morocco,East Rutherford,United States,True
+2026-06-13,2026,Haiti,Scotland,Foxborough,United States,True
+2026-06-13,2026,Australia,Turkey,Vancouver,Canada,True
+2026-06-14,2026,Sweden,Tunisia,Guadalupe,Mexico,True
+2026-06-14,2026,Netherlands,Japan,Arlington,United States,True
+2026-06-14,2026,Germany,Curaçao,Houston,United States,True
+2026-06-14,2026,Ivory Coast,Ecuador,Philadelphia,United States,True
+2026-06-15,2026,Belgium,Egypt,Seattle,United States,True
+2026-06-15,2026,Iran,New Zealand,Inglewood,United States,True
+2026-06-15,2026,Spain,Cape Verde,Atlanta,United States,True
+2026-06-15,2026,Saudi Arabia,Uruguay,Miami Gardens,United States,True
+2026-06-16,2026,Austria,Jordan,Santa Clara,United States,True
+2026-06-16,2026,Argentina,Algeria,Kansas City,United States,True
+2026-06-16,2026,France,Senegal,East Rutherford,United States,True
+2026-06-16,2026,Iraq,Norway,Foxborough,United States,True
+2026-06-17,2026,Portugal,DR Congo,Houston,United States,True
+2026-06-17,2026,Uzbekistan,Colombia,Mexico City,Mexico,True
+2026-06-17,2026,England,Croatia,Arlington,United States,True
+2026-06-17,2026,Ghana,Panama,Toronto,Canada,True
+2026-06-18,2026,Czech Republic,South Africa,Atlanta,United States,True
+2026-06-18,2026,Mexico,South Korea,Zapopan,Mexico,False
+2026-06-18,2026,Switzerland,Bosnia and Herzegovina,Inglewood,United States,True
+2026-06-18,2026,Canada,Qatar,Vancouver,Canada,False
+2026-06-19,2026,Turkey,Paraguay,Santa Clara,United States,True
+2026-06-19,2026,Scotland,Morocco,Foxborough,United States,True
+2026-06-19,2026,Brazil,Haiti,Philadelphia,United States,True
+2026-06-19,2026,United States,Australia,Seattle,United States,False
+2026-06-20,2026,Netherlands,Sweden,Houston,United States,True
+2026-06-20,2026,Tunisia,Japan,Guadalupe,Mexico,True
+2026-06-20,2026,Germany,Ivory Coast,Toronto,Canada,True
+2026-06-20,2026,Ecuador,Curaçao,Kansas City,United States,True
+2026-06-21,2026,Belgium,Iran,Inglewood,United States,True
+2026-06-21,2026,New Zealand,Egypt,Vancouver,Canada,True
+2026-06-21,2026,Spain,Saudi Arabia,Atlanta,United States,True
+2026-06-21,2026,Uruguay,Cape Verde,Miami Gardens,United States,True
+2026-06-22,2026,France,Iraq,Philadelphia,United States,True
+2026-06-22,2026,Norway,Senegal,East Rutherford,United States,True
+2026-06-22,2026,Argentina,Austria,Arlington,United States,True
+2026-06-22,2026,Jordan,Algeria,Santa Clara,United States,True
+2026-06-23,2026,Portugal,Uzbekistan,Houston,United States,True
+2026-06-23,2026,Colombia,DR Congo,Zapopan,Mexico,True
+2026-06-23,2026,England,Ghana,Foxborough,United States,True
+2026-06-23,2026,Panama,Croatia,Toronto,Canada,True
+2026-06-24,2026,Morocco,Haiti,Atlanta,United States,True
+2026-06-24,2026,Bosnia and Herzegovina,Qatar,Seattle,United States,True
+2026-06-24,2026,Scotland,Brazil,Miami Gardens,United States,True
+2026-06-24,2026,South Africa,South Korea,Guadalupe,Mexico,True
+2026-06-24,2026,Mexico,Czech Republic,Mexico City,Mexico,False
+2026-06-24,2026,Canada,Switzerland,Vancouver,Canada,False
+2026-06-25,2026,United States,Turkey,Inglewood,United States,False
+2026-06-25,2026,Paraguay,Australia,Santa Clara,United States,True
+2026-06-25,2026,Curaçao,Ivory Coast,Philadelphia,United States,True
+2026-06-25,2026,Ecuador,Germany,East Rutherford,United States,True
+2026-06-25,2026,Japan,Sweden,Arlington,United States,True
+2026-06-25,2026,Tunisia,Netherlands,Kansas City,United States,True
+2026-06-26,2026,Senegal,Iraq,Toronto,Canada,True
+2026-06-26,2026,Norway,France,Foxborough,United States,True
+2026-06-26,2026,Uruguay,Spain,Zapopan,Mexico,True
+2026-06-26,2026,New Zealand,Belgium,Vancouver,Canada,True
+2026-06-26,2026,Egypt,Iran,Seattle,United States,True
+2026-06-26,2026,Cape Verde,Saudi Arabia,Houston,United States,True
+2026-06-27,2026,Panama,England,East Rutherford,United States,True
+2026-06-27,2026,Algeria,Austria,Kansas City,United States,True
+2026-06-27,2026,Jordan,Argentina,Arlington,United States,True
+2026-06-27,2026,Colombia,Portugal,Miami Gardens,United States,True
+2026-06-27,2026,DR Congo,Uzbekistan,Atlanta,United States,True
+2026-06-27,2026,Croatia,Ghana,Philadelphia,United States,True

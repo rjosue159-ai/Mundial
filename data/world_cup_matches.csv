@@ -1,0 +1,965 @@
+match_date,year,home_team,away_team,home_score,away_score,result,winner,goal_difference,total_goals,decided_by_penalties,penalty_winner,city,host_country,neutral
+1930-07-13,1930,Belgium,United States,0,3,away_win,United States,-3,3,False,,Montevideo,Uruguay,True
+1930-07-13,1930,France,Mexico,4,1,home_win,France,3,5,False,,Montevideo,Uruguay,True
+1930-07-14,1930,Brazil,Yugoslavia,1,2,away_win,Yugoslavia,-1,3,False,,Montevideo,Uruguay,True
+1930-07-14,1930,Peru,Romania,1,3,away_win,Romania,-2,4,False,,Montevideo,Uruguay,True
+1930-07-15,1930,Argentina,France,1,0,home_win,Argentina,1,1,False,,Montevideo,Uruguay,True
+1930-07-16,1930,Chile,Mexico,3,0,home_win,Chile,3,3,False,,Montevideo,Uruguay,True
+1930-07-17,1930,Bolivia,Yugoslavia,0,4,away_win,Yugoslavia,-4,4,False,,Montevideo,Uruguay,True
+1930-07-17,1930,Paraguay,United States,0,3,away_win,United States,-3,3,False,,Montevideo,Uruguay,True
+1930-07-18,1930,Uruguay,Peru,1,0,home_win,Uruguay,1,1,False,,Montevideo,Uruguay,False
+1930-07-19,1930,Argentina,Mexico,6,3,home_win,Argentina,3,9,False,,Montevideo,Uruguay,True
+1930-07-19,1930,Chile,France,1,0,home_win,Chile,1,1,False,,Montevideo,Uruguay,True
+1930-07-20,1930,Belgium,Paraguay,0,1,away_win,Paraguay,-1,1,False,,Montevideo,Uruguay,True
+1930-07-20,1930,Bolivia,Brazil,0,4,away_win,Brazil,-4,4,False,,Montevideo,Uruguay,True
+1930-07-21,1930,Uruguay,Romania,4,0,home_win,Uruguay,4,4,False,,Montevideo,Uruguay,False
+1930-07-22,1930,Argentina,Chile,3,1,home_win,Argentina,2,4,False,,Montevideo,Uruguay,True
+1930-07-26,1930,Argentina,United States,6,1,home_win,Argentina,5,7,False,,Montevideo,Uruguay,True
+1930-07-27,1930,Uruguay,Yugoslavia,6,1,home_win,Uruguay,5,7,False,,Montevideo,Uruguay,False
+1930-07-30,1930,Uruguay,Argentina,4,2,home_win,Uruguay,2,6,False,,Montevideo,Uruguay,False
+1934-05-27,1934,Argentina,Sweden,2,3,away_win,Sweden,-1,5,False,,Bologna,Italy,True
+1934-05-27,1934,Austria,France,3,2,home_win,Austria,1,5,False,,Turin,Italy,True
+1934-05-27,1934,Belgium,Germany,2,5,away_win,Germany,-3,7,False,,Florence,Italy,True
+1934-05-27,1934,Brazil,Spain,1,3,away_win,Spain,-2,4,False,,Genoa,Italy,True
+1934-05-27,1934,Czechoslovakia,Romania,2,1,home_win,Czechoslovakia,1,3,False,,Trieste,Italy,True
+1934-05-27,1934,Egypt,Hungary,2,4,away_win,Hungary,-2,6,False,,Naples,Italy,True
+1934-05-27,1934,Italy,United States,7,1,home_win,Italy,6,8,False,,Rome,Italy,False
+1934-05-27,1934,Netherlands,Switzerland,2,3,away_win,Switzerland,-1,5,False,,Milan,Italy,True
+1934-05-31,1934,Austria,Hungary,2,1,home_win,Austria,1,3,False,,Bologna,Italy,True
+1934-05-31,1934,Czechoslovakia,Switzerland,3,2,home_win,Czechoslovakia,1,5,False,,Turin,Italy,True
+1934-05-31,1934,Germany,Sweden,2,1,home_win,Germany,1,3,False,,Milan,Italy,True
+1934-05-31,1934,Italy,Spain,1,1,draw,draw,0,2,False,,Florence,Italy,False
+1934-06-01,1934,Italy,Spain,1,0,home_win,Italy,1,1,False,,Florence,Italy,False
+1934-06-03,1934,Czechoslovakia,Germany,3,1,home_win,Czechoslovakia,2,4,False,,Rome,Italy,True
+1934-06-03,1934,Italy,Austria,1,0,home_win,Italy,1,1,False,,Milan,Italy,False
+1934-06-07,1934,Austria,Germany,2,3,away_win,Germany,-1,5,False,,Naples,Italy,True
+1934-06-10,1934,Italy,Czechoslovakia,2,1,home_win,Italy,1,3,False,,Rome,Italy,False
+1938-06-04,1938,Germany,Switzerland,1,1,draw,draw,0,2,False,,Paris,France,True
+1938-06-05,1938,Brazil,Poland,6,5,home_win,Brazil,1,11,False,,Strasbourg,France,True
+1938-06-05,1938,Cuba,Romania,3,3,draw,draw,0,6,False,,Toulouse,France,True
+1938-06-05,1938,Czechoslovakia,Netherlands,3,0,home_win,Czechoslovakia,3,3,False,,Le Havre,France,True
+1938-06-05,1938,France,Belgium,3,1,home_win,France,2,4,False,,Colombes,France,False
+1938-06-05,1938,Hungary,Indonesia,6,0,home_win,Hungary,6,6,False,,Reims,France,True
+1938-06-05,1938,Italy,Norway,2,1,home_win,Italy,1,3,False,,Marseille,France,True
+1938-06-09,1938,Cuba,Romania,2,1,home_win,Cuba,1,3,False,,Toulouse,France,True
+1938-06-09,1938,Germany,Switzerland,2,4,away_win,Switzerland,-2,6,False,,Paris,France,True
+1938-06-12,1938,Hungary,Switzerland,2,0,home_win,Hungary,2,2,False,,Lille,France,True
+1938-06-12,1938,France,Italy,1,3,away_win,Italy,-2,4,False,,Colombes,France,False
+1938-06-12,1938,Cuba,Sweden,0,8,away_win,Sweden,-8,8,False,,Antibes,France,True
+1938-06-12,1938,Brazil,Czechoslovakia,1,1,draw,draw,0,2,False,,Bordeaux,France,True
+1938-06-14,1938,Brazil,Czechoslovakia,2,1,home_win,Brazil,1,3,False,,Bordeaux,France,True
+1938-06-16,1938,Brazil,Italy,1,2,away_win,Italy,-1,3,False,,Marseille,France,True
+1938-06-16,1938,Hungary,Sweden,5,1,home_win,Hungary,4,6,False,,Paris,France,True
+1938-06-19,1938,Brazil,Sweden,4,2,home_win,Brazil,2,6,False,,Bordeaux,France,True
+1938-06-19,1938,Hungary,Italy,2,4,away_win,Italy,-2,6,False,,Colombes,France,True
+1950-06-24,1950,Brazil,Mexico,4,0,home_win,Brazil,4,4,False,,Rio de Janeiro,Brazil,False
+1950-06-25,1950,Chile,England,0,2,away_win,England,-2,2,False,,Rio de Janeiro,Brazil,True
+1950-06-25,1950,Italy,Sweden,2,3,away_win,Sweden,-1,5,False,,São Paulo,Brazil,True
+1950-06-25,1950,Spain,United States,3,1,home_win,Spain,2,4,False,,Curitiba,Brazil,True
+1950-06-25,1950,Switzerland,Yugoslavia,0,3,away_win,Yugoslavia,-3,3,False,,Belo Horizonte,Brazil,True
+1950-06-28,1950,Brazil,Switzerland,2,2,draw,draw,0,4,False,,São Paulo,Brazil,False
+1950-06-28,1950,Mexico,Yugoslavia,1,4,away_win,Yugoslavia,-3,5,False,,Porto Alegre,Brazil,True
+1950-06-29,1950,Paraguay,Sweden,2,2,draw,draw,0,4,False,,Curitiba,Brazil,True
+1950-06-29,1950,Chile,Spain,0,2,away_win,Spain,-2,2,False,,Rio de Janeiro,Brazil,True
+1950-06-29,1950,England,United States,0,1,away_win,United States,-1,1,False,,Belo Horizonte,Brazil,True
+1950-07-01,1950,Brazil,Yugoslavia,2,0,home_win,Brazil,2,2,False,,Rio de Janeiro,Brazil,False
+1950-07-02,1950,Bolivia,Uruguay,0,8,away_win,Uruguay,-8,8,False,,Belo Horizonte,Brazil,True
+1950-07-02,1950,Chile,United States,5,2,home_win,Chile,3,7,False,,Recife,Brazil,True
+1950-07-02,1950,England,Spain,0,1,away_win,Spain,-1,1,False,,Rio de Janeiro,Brazil,True
+1950-07-02,1950,Italy,Paraguay,2,0,home_win,Italy,2,2,False,,São Paulo,Brazil,True
+1950-07-02,1950,Mexico,Switzerland,1,2,away_win,Switzerland,-1,3,False,,Porto Alegre,Brazil,True
+1950-07-09,1950,Brazil,Sweden,7,1,home_win,Brazil,6,8,False,,Rio de Janeiro,Brazil,False
+1950-07-09,1950,Spain,Uruguay,2,2,draw,draw,0,4,False,,São Paulo,Brazil,True
+1950-07-13,1950,Brazil,Spain,6,1,home_win,Brazil,5,7,False,,Rio de Janeiro,Brazil,False
+1950-07-13,1950,Sweden,Uruguay,2,3,away_win,Uruguay,-1,5,False,,São Paulo,Brazil,True
+1950-07-16,1950,Brazil,Uruguay,1,2,away_win,Uruguay,-1,3,False,,Rio de Janeiro,Brazil,False
+1950-07-16,1950,Spain,Sweden,1,3,away_win,Sweden,-2,4,False,,São Paulo,Brazil,True
+1954-06-16,1954,France,Yugoslavia,0,1,away_win,Yugoslavia,-1,1,False,,Lausanne,Switzerland,True
+1954-06-16,1954,Czechoslovakia,Uruguay,0,2,away_win,Uruguay,-2,2,False,,Bern,Switzerland,True
+1954-06-16,1954,Brazil,Mexico,5,0,home_win,Brazil,5,5,False,,Geneva,Switzerland,True
+1954-06-16,1954,Austria,Scotland,1,0,home_win,Austria,1,1,False,,Zürich,Switzerland,True
+1954-06-17,1954,Belgium,England,4,4,draw,draw,0,8,False,,Basel,Switzerland,True
+1954-06-17,1954,Germany,Turkey,4,1,home_win,Germany,3,5,False,,Bern,Switzerland,True
+1954-06-17,1954,Hungary,South Korea,9,0,home_win,Hungary,9,9,False,,Zürich,Switzerland,True
+1954-06-17,1954,Switzerland,Italy,2,1,home_win,Switzerland,1,3,False,,Lausanne,Switzerland,False
+1954-06-19,1954,Austria,Czechoslovakia,5,0,home_win,Austria,5,5,False,,Zürich,Switzerland,True
+1954-06-19,1954,Brazil,Yugoslavia,1,1,draw,draw,0,2,False,,Lausanne,Switzerland,True
+1954-06-19,1954,France,Mexico,3,2,home_win,France,1,5,False,,Geneva,Switzerland,True
+1954-06-19,1954,Scotland,Uruguay,0,7,away_win,Uruguay,-7,7,False,,Basel,Switzerland,True
+1954-06-20,1954,Belgium,Italy,1,4,away_win,Italy,-3,5,False,,Lugano,Switzerland,True
+1954-06-20,1954,Germany,Hungary,3,8,away_win,Hungary,-5,11,False,,Basel,Switzerland,True
+1954-06-20,1954,Switzerland,England,0,2,away_win,England,-2,2,False,,Bern,Switzerland,False
+1954-06-20,1954,South Korea,Turkey,0,7,away_win,Turkey,-7,7,False,,Geneva,Switzerland,True
+1954-06-23,1954,Switzerland,Italy,4,1,home_win,Switzerland,3,5,False,,Basel,Switzerland,False
+1954-06-23,1954,Germany,Turkey,7,2,home_win,Germany,5,9,False,,Zürich,Switzerland,True
+1954-06-26,1954,England,Uruguay,2,4,away_win,Uruguay,-2,6,False,,Basel,Switzerland,True
+1954-06-26,1954,Switzerland,Austria,5,7,away_win,Austria,-2,12,False,,Lausanne,Switzerland,False
+1954-06-27,1954,Brazil,Hungary,2,4,away_win,Hungary,-2,6,False,,Bern,Switzerland,True
+1954-06-27,1954,Germany,Yugoslavia,2,0,home_win,Germany,2,2,False,,Geneva,Switzerland,True
+1954-06-30,1954,Austria,Germany,1,6,away_win,Germany,-5,7,False,,Basel,Switzerland,True
+1954-06-30,1954,Hungary,Uruguay,4,2,home_win,Hungary,2,6,False,,Lausanne,Switzerland,True
+1954-07-03,1954,Austria,Uruguay,3,1,home_win,Austria,2,4,False,,Zürich,Switzerland,True
+1954-07-04,1954,Germany,Hungary,3,2,home_win,Germany,1,5,False,,Bern,Switzerland,True
+1958-06-08,1958,Sweden,Mexico,3,0,home_win,Sweden,3,3,False,,Solna,Sweden,False
+1958-06-08,1958,Scotland,Yugoslavia,1,1,draw,draw,0,2,False,,Västerås,Sweden,True
+1958-06-08,1958,Hungary,Wales,1,1,draw,draw,0,2,False,,Sandviken,Sweden,True
+1958-06-08,1958,France,Paraguay,7,3,home_win,France,4,10,False,,Norrköping,Sweden,True
+1958-06-08,1958,Czechoslovakia,Northern Ireland,0,1,away_win,Northern Ireland,-1,1,False,,Halmstad,Sweden,True
+1958-06-08,1958,Austria,Brazil,0,3,away_win,Brazil,-3,3,False,,Uddevalla,Sweden,True
+1958-06-08,1958,Argentina,Germany,1,3,away_win,Germany,-2,4,False,,Malmö,Sweden,True
+1958-06-08,1958,England,Russia,2,2,draw,draw,0,4,False,,Gothenburg,Sweden,True
+1958-06-11,1958,Argentina,Northern Ireland,3,1,home_win,Argentina,2,4,False,,Halmstad,Sweden,True
+1958-06-11,1958,Austria,Russia,0,2,away_win,Russia,-2,2,False,,Borås,Sweden,True
+1958-06-11,1958,Brazil,England,0,0,draw,draw,0,0,False,,Gothenburg,Sweden,True
+1958-06-11,1958,Czechoslovakia,Germany,2,2,draw,draw,0,4,False,,Helsingborg,Sweden,True
+1958-06-11,1958,France,Yugoslavia,2,3,away_win,Yugoslavia,-1,5,False,,Västerås,Sweden,True
+1958-06-11,1958,Mexico,Wales,1,1,draw,draw,0,2,False,,Solna,Sweden,True
+1958-06-11,1958,Paraguay,Scotland,3,2,home_win,Paraguay,1,5,False,,Norrköping,Sweden,True
+1958-06-12,1958,Sweden,Hungary,2,1,home_win,Sweden,1,3,False,,Solna,Sweden,False
+1958-06-15,1958,Paraguay,Yugoslavia,3,3,draw,draw,0,6,False,,Eskilstuna,Sweden,True
+1958-06-15,1958,Hungary,Mexico,4,0,home_win,Hungary,4,4,False,,Sandviken,Sweden,True
+1958-06-15,1958,Sweden,Wales,0,0,draw,draw,0,0,False,,Solna,Sweden,False
+1958-06-15,1958,Germany,Northern Ireland,2,2,draw,draw,0,4,False,,Malmö,Sweden,True
+1958-06-15,1958,France,Scotland,2,1,home_win,France,1,3,False,,Örebro,Sweden,True
+1958-06-15,1958,Brazil,Russia,2,0,home_win,Brazil,2,2,False,,Gothenburg,Sweden,True
+1958-06-15,1958,Austria,England,2,2,draw,draw,0,4,False,,Borås,Sweden,True
+1958-06-15,1958,Argentina,Czechoslovakia,1,6,away_win,Czechoslovakia,-5,7,False,,Helsingborg,Sweden,True
+1958-06-17,1958,Czechoslovakia,Northern Ireland,1,2,away_win,Northern Ireland,-1,3,False,,Malmö,Sweden,True
+1958-06-17,1958,England,Russia,0,1,away_win,Russia,-1,1,False,,Gothenburg,Sweden,True
+1958-06-17,1958,Hungary,Wales,1,2,away_win,Wales,-1,3,False,,Solna,Sweden,True
+1958-06-19,1958,Brazil,Wales,1,0,home_win,Brazil,1,1,False,,Gothenburg,Sweden,True
+1958-06-19,1958,France,Northern Ireland,4,0,home_win,France,4,4,False,,Norrköping,Sweden,True
+1958-06-19,1958,Germany,Yugoslavia,1,0,home_win,Germany,1,1,False,,Malmö,Sweden,True
+1958-06-19,1958,Sweden,Russia,2,0,home_win,Sweden,2,2,False,,Solna,Sweden,False
+1958-06-24,1958,Brazil,France,5,2,home_win,Brazil,3,7,False,,Solna,Sweden,True
+1958-06-24,1958,Sweden,Germany,3,1,home_win,Sweden,2,4,False,,Gothenburg,Sweden,False
+1958-06-28,1958,France,Germany,6,3,home_win,France,3,9,False,,Gothenburg,Sweden,True
+1958-06-29,1958,Sweden,Brazil,2,5,away_win,Brazil,-3,7,False,,Solna,Sweden,False
+1962-05-30,1962,Argentina,Bulgaria,1,0,home_win,Argentina,1,1,False,,Rancagua,Chile,True
+1962-05-30,1962,Brazil,Mexico,2,0,home_win,Brazil,2,2,False,,Viña del Mar,Chile,True
+1962-05-30,1962,Chile,Switzerland,3,1,home_win,Chile,2,4,False,,Santiago,Chile,False
+1962-05-30,1962,Colombia,Uruguay,1,2,away_win,Uruguay,-1,3,False,,Arica,Chile,True
+1962-05-31,1962,Czechoslovakia,Spain,1,0,home_win,Czechoslovakia,1,1,False,,Viña del Mar,Chile,True
+1962-05-31,1962,England,Hungary,1,2,away_win,Hungary,-1,3,False,,Rancagua,Chile,True
+1962-05-31,1962,Germany,Italy,0,0,draw,draw,0,0,False,,Santiago,Chile,True
+1962-05-31,1962,Russia,Yugoslavia,2,0,home_win,Russia,2,2,False,,Arica,Chile,True
+1962-06-02,1962,Argentina,England,1,3,away_win,England,-2,4,False,,Rancagua,Chile,True
+1962-06-02,1962,Brazil,Czechoslovakia,0,0,draw,draw,0,0,False,,Viña del Mar,Chile,True
+1962-06-02,1962,Chile,Italy,2,0,home_win,Chile,2,2,False,,Santiago,Chile,False
+1962-06-02,1962,Uruguay,Yugoslavia,1,3,away_win,Yugoslavia,-2,4,False,,Arica,Chile,True
+1962-06-03,1962,Germany,Switzerland,2,1,home_win,Germany,1,3,False,,Santiago,Chile,True
+1962-06-03,1962,Mexico,Spain,0,1,away_win,Spain,-1,1,False,,Viña del Mar,Chile,True
+1962-06-03,1962,Bulgaria,Hungary,1,6,away_win,Hungary,-5,7,False,,Rancagua,Chile,True
+1962-06-03,1962,Colombia,Russia,4,4,draw,draw,0,8,False,,Arica,Chile,True
+1962-06-06,1962,Argentina,Hungary,0,0,draw,draw,0,0,False,,Rancagua,Chile,True
+1962-06-06,1962,Brazil,Spain,2,1,home_win,Brazil,1,3,False,,Viña del Mar,Chile,True
+1962-06-06,1962,Chile,Germany,0,2,away_win,Germany,-2,2,False,,Santiago,Chile,False
+1962-06-06,1962,Russia,Uruguay,2,1,home_win,Russia,1,3,False,,Arica,Chile,True
+1962-06-07,1962,Bulgaria,England,0,0,draw,draw,0,0,False,,Rancagua,Chile,True
+1962-06-07,1962,Colombia,Yugoslavia,0,5,away_win,Yugoslavia,-5,5,False,,Arica,Chile,True
+1962-06-07,1962,Czechoslovakia,Mexico,1,3,away_win,Mexico,-2,4,False,,Viña del Mar,Chile,True
+1962-06-07,1962,Italy,Switzerland,3,0,home_win,Italy,3,3,False,,Santiago,Chile,True
+1962-06-10,1962,Brazil,England,3,1,home_win,Brazil,2,4,False,,Viña del Mar,Chile,True
+1962-06-10,1962,Chile,Russia,2,1,home_win,Chile,1,3,False,,Arica,Chile,False
+1962-06-10,1962,Czechoslovakia,Hungary,1,0,home_win,Czechoslovakia,1,1,False,,Rancagua,Chile,True
+1962-06-10,1962,Germany,Yugoslavia,0,1,away_win,Yugoslavia,-1,1,False,,Santiago,Chile,True
+1962-06-13,1962,Czechoslovakia,Yugoslavia,3,1,home_win,Czechoslovakia,2,4,False,,Viña del Mar,Chile,True
+1962-06-13,1962,Chile,Brazil,2,4,away_win,Brazil,-2,6,False,,Santiago,Chile,False
+1962-06-16,1962,Chile,Yugoslavia,1,0,home_win,Chile,1,1,False,,Santiago,Chile,False
+1962-06-17,1962,Brazil,Czechoslovakia,3,1,home_win,Brazil,2,4,False,,Santiago,Chile,True
+1966-07-11,1966,England,Uruguay,0,0,draw,draw,0,0,False,,London,England,False
+1966-07-12,1966,Brazil,Bulgaria,2,0,home_win,Brazil,2,2,False,,Liverpool,England,True
+1966-07-12,1966,Germany,Switzerland,5,0,home_win,Germany,5,5,False,,Sheffield,England,True
+1966-07-12,1966,North Korea,Russia,0,3,away_win,Russia,-3,3,False,,Middlesbrough,England,True
+1966-07-13,1966,Chile,Italy,0,2,away_win,Italy,-2,2,False,,Sunderland,England,True
+1966-07-13,1966,Argentina,Spain,2,1,home_win,Argentina,1,3,False,,Birmingham,England,True
+1966-07-13,1966,France,Mexico,1,1,draw,draw,0,2,False,,London,England,True
+1966-07-13,1966,Hungary,Portugal,1,3,away_win,Portugal,-2,4,False,,Manchester,England,True
+1966-07-15,1966,Brazil,Hungary,1,3,away_win,Hungary,-2,4,False,,Liverpool,England,True
+1966-07-15,1966,Chile,North Korea,1,1,draw,draw,0,2,False,,Middlesbrough,England,True
+1966-07-15,1966,France,Uruguay,1,2,away_win,Uruguay,-1,3,False,,London,England,True
+1966-07-15,1966,Spain,Switzerland,2,1,home_win,Spain,1,3,False,,Sheffield,England,True
+1966-07-16,1966,Italy,Russia,0,1,away_win,Russia,-1,1,False,,Sunderland,England,True
+1966-07-16,1966,England,Mexico,2,0,home_win,England,2,2,False,,London,England,False
+1966-07-16,1966,Bulgaria,Portugal,0,3,away_win,Portugal,-3,3,False,,Manchester,England,True
+1966-07-16,1966,Argentina,Germany,0,0,draw,draw,0,0,False,,Birmingham,England,True
+1966-07-19,1966,Argentina,Switzerland,2,0,home_win,Argentina,2,2,False,,Sheffield,England,True
+1966-07-19,1966,Brazil,Portugal,1,3,away_win,Portugal,-2,4,False,,Liverpool,England,True
+1966-07-19,1966,Italy,North Korea,0,1,away_win,North Korea,-1,1,False,,Middlesbrough,England,True
+1966-07-19,1966,Mexico,Uruguay,0,0,draw,draw,0,0,False,,London,England,True
+1966-07-20,1966,Bulgaria,Hungary,1,3,away_win,Hungary,-2,4,False,,Manchester,England,True
+1966-07-20,1966,Chile,Russia,1,2,away_win,Russia,-1,3,False,,Sunderland,England,True
+1966-07-20,1966,England,France,2,0,home_win,England,2,2,False,,London,England,False
+1966-07-20,1966,Germany,Spain,2,1,home_win,Germany,1,3,False,,Birmingham,England,True
+1966-07-23,1966,England,Argentina,1,0,home_win,England,1,1,False,,London,England,False
+1966-07-23,1966,Germany,Uruguay,4,0,home_win,Germany,4,4,False,,Sheffield,England,True
+1966-07-23,1966,Hungary,Russia,1,2,away_win,Russia,-1,3,False,,Sunderland,England,True
+1966-07-23,1966,North Korea,Portugal,3,5,away_win,Portugal,-2,8,False,,Liverpool,England,True
+1966-07-25,1966,Germany,Russia,2,1,home_win,Germany,1,3,False,,Liverpool,England,True
+1966-07-26,1966,England,Portugal,2,1,home_win,England,1,3,False,,London,England,False
+1966-07-28,1966,Portugal,Russia,2,1,home_win,Portugal,1,3,False,,London,England,True
+1966-07-30,1966,England,Germany,4,2,home_win,England,2,6,False,,London,England,False
+1970-05-31,1970,Mexico,Russia,0,0,draw,draw,0,0,False,,Mexico City,Mexico,False
+1970-06-02,1970,Bulgaria,Peru,2,3,away_win,Peru,-1,5,False,,León,Mexico,True
+1970-06-02,1970,England,Romania,1,0,home_win,England,1,1,False,,Guadalajara,Mexico,True
+1970-06-02,1970,Israel,Uruguay,0,2,away_win,Uruguay,-2,2,False,,Puebla,Mexico,True
+1970-06-03,1970,Belgium,El Salvador,3,0,home_win,Belgium,3,3,False,,Mexico City,Mexico,True
+1970-06-03,1970,Brazil,Czechoslovakia,4,1,home_win,Brazil,3,5,False,,Guadalajara,Mexico,True
+1970-06-03,1970,Germany,Morocco,2,1,home_win,Germany,1,3,False,,León,Mexico,True
+1970-06-03,1970,Italy,Sweden,1,0,home_win,Italy,1,1,False,,Toluca,Mexico,True
+1970-06-06,1970,Belgium,Russia,1,4,away_win,Russia,-3,5,False,,Mexico City,Mexico,True
+1970-06-06,1970,Czechoslovakia,Romania,1,2,away_win,Romania,-1,3,False,,Guadalajara,Mexico,True
+1970-06-06,1970,Italy,Uruguay,0,0,draw,draw,0,0,False,,Puebla,Mexico,True
+1970-06-06,1970,Morocco,Peru,0,3,away_win,Peru,-3,3,False,,León,Mexico,True
+1970-06-07,1970,Mexico,El Salvador,4,0,home_win,Mexico,4,4,False,,Mexico City,Mexico,False
+1970-06-07,1970,Israel,Sweden,1,1,draw,draw,0,2,False,,Toluca,Mexico,True
+1970-06-07,1970,Brazil,England,1,0,home_win,Brazil,1,1,False,,Guadalajara,Mexico,True
+1970-06-07,1970,Bulgaria,Germany,2,5,away_win,Germany,-3,7,False,,León,Mexico,True
+1970-06-10,1970,Brazil,Romania,3,2,home_win,Brazil,1,5,False,,Guadalajara,Mexico,True
+1970-06-10,1970,El Salvador,Russia,0,2,away_win,Russia,-2,2,False,,Mexico City,Mexico,True
+1970-06-10,1970,Germany,Peru,3,1,home_win,Germany,2,4,False,,León,Mexico,True
+1970-06-10,1970,Sweden,Uruguay,1,0,home_win,Sweden,1,1,False,,Puebla,Mexico,True
+1970-06-11,1970,Bulgaria,Morocco,1,1,draw,draw,0,2,False,,León,Mexico,True
+1970-06-11,1970,Czechoslovakia,England,0,1,away_win,England,-1,1,False,,Guadalajara,Mexico,True
+1970-06-11,1970,Israel,Italy,0,0,draw,draw,0,0,False,,Toluca,Mexico,True
+1970-06-11,1970,Mexico,Belgium,1,0,home_win,Mexico,1,1,False,,Mexico City,Mexico,False
+1970-06-14,1970,Russia,Uruguay,0,1,away_win,Uruguay,-1,1,False,,Mexico City,Mexico,True
+1970-06-14,1970,Brazil,Peru,4,2,home_win,Brazil,2,6,False,,Guadalajara,Mexico,True
+1970-06-14,1970,England,Germany,2,3,away_win,Germany,-1,5,False,,León,Mexico,True
+1970-06-14,1970,Mexico,Italy,1,4,away_win,Italy,-3,5,False,,Toluca,Mexico,False
+1970-06-17,1970,Germany,Italy,3,4,away_win,Italy,-1,7,False,,Mexico City,Mexico,True
+1970-06-17,1970,Brazil,Uruguay,3,1,home_win,Brazil,2,4,False,,Guadalajara,Mexico,True
+1970-06-20,1970,Germany,Uruguay,1,0,home_win,Germany,1,1,False,,Mexico City,Mexico,True
+1970-06-21,1970,Brazil,Italy,4,1,home_win,Brazil,3,5,False,,Mexico City,Mexico,True
+1974-06-13,1974,Brazil,Yugoslavia,0,0,draw,draw,0,0,False,,Frankfurt am Main,Germany,True
+1974-06-14,1974,DR Congo,Scotland,0,2,away_win,Scotland,-2,2,False,,Dortmund,Germany,True
+1974-06-14,1974,German DR,Australia,2,0,home_win,German DR,2,2,False,,Hamburg,Germany,True
+1974-06-14,1974,Germany,Chile,1,0,home_win,Germany,1,1,False,,Berlin,Germany,False
+1974-06-15,1974,Italy,Haiti,3,1,home_win,Italy,2,4,False,,Munich,Germany,True
+1974-06-15,1974,Poland,Argentina,3,2,home_win,Poland,1,5,False,,Stuttgart,Germany,True
+1974-06-15,1974,Sweden,Bulgaria,0,0,draw,draw,0,0,False,,Düsseldorf,Germany,True
+1974-06-15,1974,Uruguay,Netherlands,0,2,away_win,Netherlands,-2,2,False,,Hanover,Germany,True
+1974-06-18,1974,Yugoslavia,DR Congo,9,0,home_win,Yugoslavia,9,9,False,,Gelsenkirchen,Germany,True
+1974-06-18,1974,Scotland,Brazil,0,0,draw,draw,0,0,False,,Frankfurt am Main,Germany,True
+1974-06-18,1974,Chile,German DR,1,1,draw,draw,0,2,False,,Berlin,Germany,True
+1974-06-18,1974,Germany,Australia,3,0,home_win,Germany,3,3,False,,Hamburg,Germany,False
+1974-06-19,1974,Argentina,Italy,1,1,draw,draw,0,2,False,,Stuttgart,Germany,True
+1974-06-19,1974,Bulgaria,Uruguay,1,1,draw,draw,0,2,False,,Hanover,Germany,True
+1974-06-19,1974,Haiti,Poland,0,7,away_win,Poland,-7,7,False,,Munich,Germany,True
+1974-06-19,1974,Netherlands,Sweden,0,0,draw,draw,0,0,False,,Dortmund,Germany,True
+1974-06-22,1974,Australia,Chile,0,0,draw,draw,0,0,False,,Berlin,Germany,True
+1974-06-22,1974,DR Congo,Brazil,0,3,away_win,Brazil,-3,3,False,,Gelsenkirchen,Germany,True
+1974-06-22,1974,Germany,German DR,0,1,away_win,German DR,-1,1,False,,Hamburg,Germany,False
+1974-06-22,1974,Scotland,Yugoslavia,1,1,draw,draw,0,2,False,,Frankfurt am Main,Germany,True
+1974-06-23,1974,Argentina,Haiti,4,1,home_win,Argentina,3,5,False,,Munich,Germany,True
+1974-06-23,1974,Bulgaria,Netherlands,1,4,away_win,Netherlands,-3,5,False,,Dortmund,Germany,True
+1974-06-23,1974,Poland,Italy,2,1,home_win,Poland,1,3,False,,Stuttgart,Germany,True
+1974-06-23,1974,Sweden,Uruguay,3,0,home_win,Sweden,3,3,False,,Düsseldorf,Germany,True
+1974-06-26,1974,Sweden,Poland,0,1,away_win,Poland,-1,1,False,,Stuttgart,Germany,True
+1974-06-26,1974,Netherlands,Argentina,4,0,home_win,Netherlands,4,4,False,,Gelsenkirchen,Germany,True
+1974-06-26,1974,Brazil,German DR,1,0,home_win,Brazil,1,1,False,,Hanover,Germany,True
+1974-06-26,1974,Germany,Yugoslavia,2,0,home_win,Germany,2,2,False,,Düsseldorf,Germany,False
+1974-06-30,1974,Argentina,Brazil,1,2,away_win,Brazil,-1,3,False,,Hanover,Germany,True
+1974-06-30,1974,German DR,Netherlands,0,2,away_win,Netherlands,-2,2,False,,Gelsenkirchen,Germany,True
+1974-06-30,1974,Germany,Sweden,4,2,home_win,Germany,2,6,False,,Düsseldorf,Germany,False
+1974-06-30,1974,Poland,Yugoslavia,2,1,home_win,Poland,1,3,False,,Frankfurt am Main,Germany,True
+1974-07-03,1974,Argentina,German DR,1,1,draw,draw,0,2,False,,Gelsenkirchen,Germany,True
+1974-07-03,1974,Germany,Poland,1,0,home_win,Germany,1,1,False,,Frankfurt am Main,Germany,False
+1974-07-03,1974,Netherlands,Brazil,2,0,home_win,Netherlands,2,2,False,,Dortmund,Germany,True
+1974-07-03,1974,Sweden,Yugoslavia,2,1,home_win,Sweden,1,3,False,,Düsseldorf,Germany,True
+1974-07-06,1974,Brazil,Poland,0,1,away_win,Poland,-1,1,False,,Munich,Germany,True
+1974-07-07,1974,Germany,Netherlands,2,1,home_win,Germany,1,3,False,,Munich,Germany,False
+1978-06-01,1978,Germany,Poland,0,0,draw,draw,0,0,False,,Buenos Aires,Argentina,True
+1978-06-02,1978,Argentina,Hungary,2,1,home_win,Argentina,1,3,False,,Buenos Aires,Argentina,False
+1978-06-02,1978,France,Italy,1,2,away_win,Italy,-1,3,False,,Mar del Plata,Argentina,True
+1978-06-02,1978,Mexico,Tunisia,1,3,away_win,Tunisia,-2,4,False,,Rosario,Argentina,True
+1978-06-03,1978,Austria,Spain,2,1,home_win,Austria,1,3,False,,Buenos Aires,Argentina,True
+1978-06-03,1978,Brazil,Sweden,1,1,draw,draw,0,2,False,,Mar del Plata,Argentina,True
+1978-06-03,1978,Iran,Netherlands,0,3,away_win,Netherlands,-3,3,False,,Mendoza,Argentina,True
+1978-06-03,1978,Peru,Scotland,3,1,home_win,Peru,2,4,False,,Córdoba,Argentina,True
+1978-06-06,1978,Argentina,France,2,1,home_win,Argentina,1,3,False,,Buenos Aires,Argentina,False
+1978-06-06,1978,Germany,Mexico,6,0,home_win,Germany,6,6,False,,Córdoba,Argentina,True
+1978-06-06,1978,Hungary,Italy,1,3,away_win,Italy,-2,4,False,,Mar del Plata,Argentina,True
+1978-06-06,1978,Poland,Tunisia,1,0,home_win,Poland,1,1,False,,Rosario,Argentina,True
+1978-06-07,1978,Netherlands,Peru,0,0,draw,draw,0,0,False,,Mendoza,Argentina,True
+1978-06-07,1978,Iran,Scotland,1,1,draw,draw,0,2,False,,Córdoba,Argentina,True
+1978-06-07,1978,Austria,Sweden,1,0,home_win,Austria,1,1,False,,Buenos Aires,Argentina,True
+1978-06-07,1978,Brazil,Spain,0,0,draw,draw,0,0,False,,Mar del Plata,Argentina,True
+1978-06-10,1978,Argentina,Italy,0,1,away_win,Italy,-1,1,False,,Buenos Aires,Argentina,False
+1978-06-10,1978,France,Hungary,3,1,home_win,France,2,4,False,,Mar del Plata,Argentina,True
+1978-06-10,1978,Germany,Tunisia,0,0,draw,draw,0,0,False,,Córdoba,Argentina,True
+1978-06-10,1978,Mexico,Poland,1,3,away_win,Poland,-2,4,False,,Rosario,Argentina,True
+1978-06-11,1978,Austria,Brazil,0,1,away_win,Brazil,-1,1,False,,Mar del Plata,Argentina,True
+1978-06-11,1978,Iran,Peru,1,4,away_win,Peru,-3,5,False,,Córdoba,Argentina,True
+1978-06-11,1978,Netherlands,Scotland,2,3,away_win,Scotland,-1,5,False,,Mendoza,Argentina,True
+1978-06-11,1978,Spain,Sweden,1,0,home_win,Spain,1,1,False,,Buenos Aires,Argentina,True
+1978-06-14,1978,Germany,Italy,0,0,draw,draw,0,0,False,,Buenos Aires,Argentina,True
+1978-06-14,1978,Argentina,Poland,2,0,home_win,Argentina,2,2,False,,Rosario,Argentina,False
+1978-06-14,1978,Austria,Netherlands,1,5,away_win,Netherlands,-4,6,False,,Córdoba,Argentina,True
+1978-06-14,1978,Brazil,Peru,3,0,home_win,Brazil,3,3,False,,Mendoza,Argentina,True
+1978-06-18,1978,Germany,Netherlands,2,2,draw,draw,0,4,False,,Córdoba,Argentina,True
+1978-06-18,1978,Peru,Poland,0,1,away_win,Poland,-1,1,False,,Mendoza,Argentina,True
+1978-06-18,1978,Argentina,Brazil,0,0,draw,draw,0,0,False,,Rosario,Argentina,False
+1978-06-18,1978,Austria,Italy,0,1,away_win,Italy,-1,1,False,,Buenos Aires,Argentina,True
+1978-06-21,1978,Argentina,Peru,6,0,home_win,Argentina,6,6,False,,Rosario,Argentina,False
+1978-06-21,1978,Austria,Germany,3,2,home_win,Austria,1,5,False,,Córdoba,Argentina,True
+1978-06-21,1978,Brazil,Poland,3,1,home_win,Brazil,2,4,False,,Mendoza,Argentina,True
+1978-06-21,1978,Italy,Netherlands,1,2,away_win,Netherlands,-1,3,False,,Buenos Aires,Argentina,True
+1978-06-24,1978,Brazil,Italy,2,1,home_win,Brazil,1,3,False,,Buenos Aires,Argentina,True
+1978-06-25,1978,Argentina,Netherlands,3,1,home_win,Argentina,2,4,False,,Buenos Aires,Argentina,False
+1982-06-13,1982,Argentina,Belgium,0,1,away_win,Belgium,-1,1,False,,Barcelona,Spain,True
+1982-06-14,1982,Brazil,Russia,2,1,home_win,Brazil,1,3,False,,Seville,Spain,True
+1982-06-14,1982,Italy,Poland,0,0,draw,draw,0,0,False,,Vigo,Spain,True
+1982-06-15,1982,Hungary,El Salvador,10,1,home_win,Hungary,9,11,False,,Elche,Spain,True
+1982-06-15,1982,Peru,Cameroon,0,0,draw,draw,0,0,False,,La Coruña,Spain,True
+1982-06-15,1982,Scotland,New Zealand,5,2,home_win,Scotland,3,7,False,,Málaga,Spain,True
+1982-06-16,1982,Spain,Honduras,1,1,draw,draw,0,2,False,,Valencia,Spain,False
+1982-06-16,1982,Germany,Algeria,1,2,away_win,Algeria,-1,3,False,,Gijón,Spain,True
+1982-06-16,1982,England,France,3,1,home_win,England,2,4,False,,Bilbao,Spain,True
+1982-06-17,1982,Chile,Austria,0,1,away_win,Austria,-1,1,False,,Oviedo,Spain,True
+1982-06-17,1982,Czechoslovakia,Kuwait,1,1,draw,draw,0,2,False,,Valladolid,Spain,True
+1982-06-17,1982,Yugoslavia,Northern Ireland,0,0,draw,draw,0,0,False,,Zaragoza,Spain,True
+1982-06-18,1982,Argentina,Hungary,4,1,home_win,Argentina,3,5,False,,Alicante,Spain,True
+1982-06-18,1982,Brazil,Scotland,4,1,home_win,Brazil,3,5,False,,Seville,Spain,True
+1982-06-18,1982,Italy,Peru,1,1,draw,draw,0,2,False,,Vigo,Spain,True
+1982-06-19,1982,Belgium,El Salvador,1,0,home_win,Belgium,1,1,False,,Elche,Spain,True
+1982-06-19,1982,Poland,Cameroon,0,0,draw,draw,0,0,False,,La Coruña,Spain,True
+1982-06-19,1982,Russia,New Zealand,3,0,home_win,Russia,3,3,False,,Málaga,Spain,True
+1982-06-20,1982,Spain,Yugoslavia,2,1,home_win,Spain,1,3,False,,Valencia,Spain,False
+1982-06-20,1982,England,Czechoslovakia,2,0,home_win,England,2,2,False,,Bilbao,Spain,True
+1982-06-20,1982,Germany,Chile,4,1,home_win,Germany,3,5,False,,Gijón,Spain,True
+1982-06-21,1982,Honduras,Northern Ireland,1,1,draw,draw,0,2,False,,Zaragoza,Spain,True
+1982-06-21,1982,France,Kuwait,4,1,home_win,France,3,5,False,,Valladolid,Spain,True
+1982-06-21,1982,Algeria,Austria,0,2,away_win,Austria,-2,2,False,,Oviedo,Spain,True
+1982-06-22,1982,Belgium,Hungary,1,1,draw,draw,0,2,False,,Elche,Spain,True
+1982-06-22,1982,Poland,Peru,5,1,home_win,Poland,4,6,False,,La Coruña,Spain,True
+1982-06-22,1982,Russia,Scotland,2,2,draw,draw,0,4,False,,Málaga,Spain,True
+1982-06-23,1982,Argentina,El Salvador,2,0,home_win,Argentina,2,2,False,,Alicante,Spain,True
+1982-06-23,1982,Brazil,New Zealand,4,0,home_win,Brazil,4,4,False,,Seville,Spain,True
+1982-06-23,1982,Italy,Cameroon,1,1,draw,draw,0,2,False,,Vigo,Spain,True
+1982-06-24,1982,Algeria,Chile,3,2,home_win,Algeria,1,5,False,,Oviedo,Spain,True
+1982-06-24,1982,France,Czechoslovakia,1,1,draw,draw,0,2,False,,Valladolid,Spain,True
+1982-06-24,1982,Honduras,Yugoslavia,0,1,away_win,Yugoslavia,-1,1,False,,Zaragoza,Spain,True
+1982-06-25,1982,England,Kuwait,1,0,home_win,England,1,1,False,,Bilbao,Spain,True
+1982-06-25,1982,Germany,Austria,1,0,home_win,Germany,1,1,False,,Gijón,Spain,True
+1982-06-25,1982,Spain,Northern Ireland,0,1,away_win,Northern Ireland,-1,1,False,,Valencia,Spain,False
+1982-06-28,1982,Poland,Belgium,3,0,home_win,Poland,3,3,False,,Barcelona,Spain,True
+1982-06-28,1982,Austria,France,0,1,away_win,France,-1,1,False,,Madrid,Spain,True
+1982-06-29,1982,Germany,England,0,0,draw,draw,0,0,False,,Madrid,Spain,True
+1982-06-29,1982,Italy,Argentina,2,1,home_win,Italy,1,3,False,,Barcelona,Spain,True
+1982-07-01,1982,Austria,Northern Ireland,2,2,draw,draw,0,4,False,,Madrid,Spain,True
+1982-07-01,1982,Belgium,Russia,0,1,away_win,Russia,-1,1,False,,Barcelona,Spain,True
+1982-07-02,1982,Argentina,Brazil,1,3,away_win,Brazil,-2,4,False,,Barcelona,Spain,True
+1982-07-02,1982,Spain,Germany,1,2,away_win,Germany,-1,3,False,,Madrid,Spain,False
+1982-07-04,1982,France,Northern Ireland,4,1,home_win,France,3,5,False,,Madrid,Spain,True
+1982-07-04,1982,Poland,Russia,0,0,draw,draw,0,0,False,,Barcelona,Spain,True
+1982-07-05,1982,Italy,Brazil,3,2,home_win,Italy,1,5,False,,Barcelona,Spain,True
+1982-07-05,1982,Spain,England,0,0,draw,draw,0,0,False,,Madrid,Spain,False
+1982-07-08,1982,Germany,France,3,3,draw,draw,0,6,True,Germany,Seville,Spain,True
+1982-07-08,1982,Poland,Italy,0,2,away_win,Italy,-2,2,False,,Barcelona,Spain,True
+1982-07-10,1982,Poland,France,3,2,home_win,Poland,1,5,False,,Alicante,Spain,True
+1982-07-11,1982,Italy,Germany,3,1,home_win,Italy,2,4,False,,Madrid,Spain,True
+1986-05-31,1986,Bulgaria,Italy,1,1,draw,draw,0,2,False,,Mexico City,Mexico,True
+1986-06-01,1986,Spain,Brazil,0,1,away_win,Brazil,-1,1,False,,Guadalajara,Mexico,True
+1986-06-01,1986,Canada,France,0,1,away_win,France,-1,1,False,,León,Mexico,True
+1986-06-02,1986,Argentina,South Korea,3,1,home_win,Argentina,2,4,False,,Mexico City,Mexico,True
+1986-06-02,1986,Morocco,Poland,0,0,draw,draw,0,0,False,,Monterrey,Mexico,True
+1986-06-02,1986,Russia,Hungary,6,0,home_win,Russia,6,6,False,,Irapuato,Mexico,True
+1986-06-03,1986,Algeria,Northern Ireland,1,1,draw,draw,0,2,False,,Guadalajara,Mexico,True
+1986-06-03,1986,Mexico,Belgium,2,1,home_win,Mexico,1,3,False,,Mexico City,Mexico,False
+1986-06-03,1986,Portugal,England,1,0,home_win,Portugal,1,1,False,,Monterrey,Mexico,True
+1986-06-04,1986,Paraguay,Iraq,1,0,home_win,Paraguay,1,1,False,,Toluca,Mexico,True
+1986-06-04,1986,Scotland,Denmark,0,1,away_win,Denmark,-1,1,False,,Nezahualcóyotl,Mexico,True
+1986-06-04,1986,Uruguay,Germany,1,1,draw,draw,0,2,False,,Querétaro,Mexico,True
+1986-06-05,1986,France,Russia,1,1,draw,draw,0,2,False,,León,Mexico,True
+1986-06-05,1986,Italy,Argentina,1,1,draw,draw,0,2,False,,Puebla,Mexico,True
+1986-06-05,1986,South Korea,Bulgaria,1,1,draw,draw,0,2,False,,Mexico City,Mexico,True
+1986-06-06,1986,Hungary,Canada,2,0,home_win,Hungary,2,2,False,,Irapuato,Mexico,True
+1986-06-06,1986,Brazil,Algeria,1,0,home_win,Brazil,1,1,False,,Guadalajara,Mexico,True
+1986-06-06,1986,England,Morocco,0,0,draw,draw,0,0,False,,Monterrey,Mexico,True
+1986-06-07,1986,Mexico,Paraguay,1,1,draw,draw,0,2,False,,Mexico City,Mexico,False
+1986-06-07,1986,Northern Ireland,Spain,1,2,away_win,Spain,-1,3,False,,Guadalajara,Mexico,True
+1986-06-07,1986,Poland,Portugal,1,0,home_win,Poland,1,1,False,,Monterrey,Mexico,True
+1986-06-08,1986,Denmark,Uruguay,6,1,home_win,Denmark,5,7,False,,Nezahualcóyotl,Mexico,True
+1986-06-08,1986,Germany,Scotland,2,1,home_win,Germany,1,3,False,,Querétaro,Mexico,True
+1986-06-08,1986,Iraq,Belgium,1,2,away_win,Belgium,-1,3,False,,Toluca,Mexico,True
+1986-06-09,1986,Hungary,France,0,3,away_win,France,-3,3,False,,León,Mexico,True
+1986-06-09,1986,Russia,Canada,2,0,home_win,Russia,2,2,False,,Irapuato,Mexico,True
+1986-06-10,1986,South Korea,Italy,2,3,away_win,Italy,-1,5,False,,Puebla,Mexico,True
+1986-06-10,1986,Argentina,Bulgaria,2,0,home_win,Argentina,2,2,False,,Mexico City,Mexico,True
+1986-06-11,1986,Portugal,Morocco,1,3,away_win,Morocco,-2,4,False,,Guadalajara,Mexico,True
+1986-06-11,1986,Paraguay,Belgium,2,2,draw,draw,0,4,False,,Toluca,Mexico,True
+1986-06-11,1986,England,Poland,3,0,home_win,England,3,3,False,,Monterrey,Mexico,True
+1986-06-11,1986,Mexico,Iraq,1,0,home_win,Mexico,1,1,False,,Mexico City,Mexico,False
+1986-06-12,1986,Algeria,Spain,0,3,away_win,Spain,-3,3,False,,Monterrey,Mexico,True
+1986-06-12,1986,Northern Ireland,Brazil,0,3,away_win,Brazil,-3,3,False,,Guadalajara,Mexico,True
+1986-06-13,1986,Denmark,Germany,2,0,home_win,Denmark,2,2,False,,Querétaro,Mexico,True
+1986-06-13,1986,Scotland,Uruguay,0,0,draw,draw,0,0,False,,Nezahualcóyotl,Mexico,True
+1986-06-15,1986,Mexico,Bulgaria,2,0,home_win,Mexico,2,2,False,,Mexico City,Mexico,False
+1986-06-15,1986,Russia,Belgium,3,4,away_win,Belgium,-1,7,False,,León,Mexico,True
+1986-06-16,1986,Argentina,Uruguay,1,0,home_win,Argentina,1,1,False,,Puebla,Mexico,True
+1986-06-16,1986,Brazil,Poland,4,0,home_win,Brazil,4,4,False,,Guadalajara,Mexico,True
+1986-06-17,1986,Italy,France,0,2,away_win,France,-2,2,False,,Mexico City,Mexico,True
+1986-06-17,1986,Morocco,Germany,0,1,away_win,Germany,-1,1,False,,Monterrey,Mexico,True
+1986-06-18,1986,England,Paraguay,3,0,home_win,England,3,3,False,,Mexico City,Mexico,True
+1986-06-18,1986,Denmark,Spain,1,5,away_win,Spain,-4,6,False,,Querétaro,Mexico,True
+1986-06-21,1986,Mexico,Germany,0,0,draw,draw,0,0,True,Germany,Monterrey,Mexico,False
+1986-06-21,1986,Brazil,France,1,1,draw,draw,0,2,True,France,Guadalajara,Mexico,True
+1986-06-22,1986,Argentina,England,2,1,home_win,Argentina,1,3,False,,Mexico City,Mexico,True
+1986-06-22,1986,Spain,Belgium,1,1,draw,draw,0,2,True,Belgium,Puebla,Mexico,True
+1986-06-25,1986,Argentina,Belgium,2,0,home_win,Argentina,2,2,False,,Mexico City,Mexico,True
+1986-06-25,1986,France,Germany,0,2,away_win,Germany,-2,2,False,,Guadalajara,Mexico,True
+1986-06-28,1986,France,Belgium,4,2,home_win,France,2,6,False,,Puebla,Mexico,True
+1986-06-29,1986,Argentina,Germany,3,2,home_win,Argentina,1,5,False,,Mexico City,Mexico,True
+1990-06-08,1990,Argentina,Cameroon,0,1,away_win,Cameroon,-1,1,False,,Milan,Italy,True
+1990-06-09,1990,Italy,Austria,1,0,home_win,Italy,1,1,False,,Rome,Italy,False
+1990-06-09,1990,Russia,Romania,0,2,away_win,Romania,-2,2,False,,Bari,Italy,True
+1990-06-09,1990,United Arab Emirates,Colombia,0,2,away_win,Colombia,-2,2,False,,Bologna,Italy,True
+1990-06-10,1990,Germany,Yugoslavia,4,1,home_win,Germany,3,5,False,,Milan,Italy,True
+1990-06-10,1990,United States,Czechoslovakia,1,5,away_win,Czechoslovakia,-4,6,False,,Florence,Italy,True
+1990-06-10,1990,Brazil,Sweden,2,1,home_win,Brazil,1,3,False,,Turin,Italy,True
+1990-06-11,1990,England,Republic of Ireland,1,1,draw,draw,0,2,False,,Cagliari,Italy,True
+1990-06-11,1990,Costa Rica,Scotland,1,0,home_win,Costa Rica,1,1,False,,Genoa,Italy,True
+1990-06-12,1990,Belgium,South Korea,2,0,home_win,Belgium,2,2,False,,Verona,Italy,True
+1990-06-12,1990,Netherlands,Egypt,1,1,draw,draw,0,2,False,,Palermo,Italy,True
+1990-06-13,1990,Argentina,Russia,2,0,home_win,Argentina,2,2,False,,Naples,Italy,True
+1990-06-13,1990,Uruguay,Spain,0,0,draw,draw,0,0,False,,Udine,Italy,True
+1990-06-14,1990,Cameroon,Romania,2,1,home_win,Cameroon,1,3,False,,Bari,Italy,True
+1990-06-14,1990,Italy,United States,1,0,home_win,Italy,1,1,False,,Rome,Italy,False
+1990-06-14,1990,Yugoslavia,Colombia,1,0,home_win,Yugoslavia,1,1,False,,Bologna,Italy,True
+1990-06-15,1990,Austria,Czechoslovakia,0,1,away_win,Czechoslovakia,-1,1,False,,Florence,Italy,True
+1990-06-15,1990,Germany,United Arab Emirates,5,1,home_win,Germany,4,6,False,,Milan,Italy,True
+1990-06-16,1990,Brazil,Costa Rica,1,0,home_win,Brazil,1,1,False,,Turin,Italy,True
+1990-06-16,1990,England,Netherlands,0,0,draw,draw,0,0,False,,Cagliari,Italy,True
+1990-06-16,1990,Sweden,Scotland,1,2,away_win,Scotland,-1,3,False,,Genoa,Italy,True
+1990-06-17,1990,South Korea,Spain,1,3,away_win,Spain,-2,4,False,,Udine,Italy,True
+1990-06-17,1990,Republic of Ireland,Egypt,0,0,draw,draw,0,0,False,,Palermo,Italy,True
+1990-06-17,1990,Belgium,Uruguay,3,1,home_win,Belgium,2,4,False,,Verona,Italy,True
+1990-06-18,1990,Argentina,Romania,1,1,draw,draw,0,2,False,,Naples,Italy,True
+1990-06-18,1990,Cameroon,Russia,0,4,away_win,Russia,-4,4,False,,Bari,Italy,True
+1990-06-19,1990,Austria,United States,2,1,home_win,Austria,1,3,False,,Florence,Italy,True
+1990-06-19,1990,Germany,Colombia,1,1,draw,draw,0,2,False,,Milan,Italy,True
+1990-06-19,1990,Italy,Czechoslovakia,2,0,home_win,Italy,2,2,False,,Rome,Italy,False
+1990-06-19,1990,Yugoslavia,United Arab Emirates,4,1,home_win,Yugoslavia,3,5,False,,Bologna,Italy,True
+1990-06-20,1990,Brazil,Scotland,1,0,home_win,Brazil,1,1,False,,Turin,Italy,True
+1990-06-20,1990,Sweden,Costa Rica,1,2,away_win,Costa Rica,-1,3,False,,Genoa,Italy,True
+1990-06-21,1990,Belgium,Spain,1,2,away_win,Spain,-1,3,False,,Verona,Italy,True
+1990-06-21,1990,England,Egypt,1,0,home_win,England,1,1,False,,Cagliari,Italy,True
+1990-06-21,1990,Republic of Ireland,Netherlands,1,1,draw,draw,0,2,False,,Palermo,Italy,True
+1990-06-21,1990,South Korea,Uruguay,0,1,away_win,Uruguay,-1,1,False,,Udine,Italy,True
+1990-06-23,1990,Czechoslovakia,Costa Rica,4,1,home_win,Czechoslovakia,3,5,False,,Bari,Italy,True
+1990-06-23,1990,Cameroon,Colombia,2,1,home_win,Cameroon,1,3,False,,Naples,Italy,True
+1990-06-24,1990,Brazil,Argentina,0,1,away_win,Argentina,-1,1,False,,Turin,Italy,True
+1990-06-24,1990,Germany,Netherlands,2,1,home_win,Germany,1,3,False,,Milan,Italy,True
+1990-06-25,1990,Republic of Ireland,Romania,0,0,draw,draw,0,0,True,Republic of Ireland,Genoa,Italy,True
+1990-06-25,1990,Italy,Uruguay,2,0,home_win,Italy,2,2,False,,Rome,Italy,False
+1990-06-26,1990,England,Belgium,1,0,home_win,England,1,1,False,,Bologna,Italy,True
+1990-06-26,1990,Spain,Yugoslavia,1,2,away_win,Yugoslavia,-1,3,False,,Verona,Italy,True
+1990-06-30,1990,Italy,Republic of Ireland,1,0,home_win,Italy,1,1,False,,Rome,Italy,False
+1990-06-30,1990,Yugoslavia,Argentina,0,0,draw,draw,0,0,True,Argentina,Florence,Italy,True
+1990-07-01,1990,Cameroon,England,2,3,away_win,England,-1,5,False,,Naples,Italy,True
+1990-07-01,1990,Germany,Czechoslovakia,1,0,home_win,Germany,1,1,False,,Milan,Italy,True
+1990-07-03,1990,Italy,Argentina,1,1,draw,draw,0,2,True,Argentina,Naples,Italy,False
+1990-07-04,1990,Germany,England,1,1,draw,draw,0,2,True,Germany,Turin,Italy,True
+1990-07-07,1990,Italy,England,2,1,home_win,Italy,1,3,False,,Bari,Italy,False
+1990-07-08,1990,Germany,Argentina,1,0,home_win,Germany,1,1,False,,Rome,Italy,True
+1994-06-17,1994,Germany,Bolivia,1,0,home_win,Germany,1,1,False,,Chicago,United States,True
+1994-06-17,1994,Spain,South Korea,2,2,draw,draw,0,4,False,,Dallas,United States,True
+1994-06-18,1994,Colombia,Romania,1,3,away_win,Romania,-2,4,False,,Pasadena,United States,True
+1994-06-18,1994,Italy,Republic of Ireland,0,1,away_win,Republic of Ireland,-1,1,False,,East Rutherford,United States,True
+1994-06-18,1994,United States,Switzerland,1,1,draw,draw,0,2,False,,Pontiac,United States,False
+1994-06-19,1994,Belgium,Morocco,1,0,home_win,Belgium,1,1,False,,Orlando,United States,True
+1994-06-19,1994,Cameroon,Sweden,2,2,draw,draw,0,4,False,,Pasadena,United States,True
+1994-06-19,1994,Norway,Mexico,1,0,home_win,Norway,1,1,False,,"Washington, D.C.",United States,True
+1994-06-20,1994,Brazil,Russia,2,0,home_win,Brazil,2,2,False,,Palo Alto,United States,True
+1994-06-20,1994,Netherlands,Saudi Arabia,2,1,home_win,Netherlands,1,3,False,,"Washington, D.C.",United States,True
+1994-06-21,1994,Argentina,Greece,4,0,home_win,Argentina,4,4,False,,Foxborough,United States,True
+1994-06-21,1994,Germany,Spain,1,1,draw,draw,0,2,False,,Chicago,United States,True
+1994-06-21,1994,Nigeria,Bulgaria,3,0,home_win,Nigeria,3,3,False,,Dallas,United States,True
+1994-06-22,1994,Romania,Switzerland,1,4,away_win,Switzerland,-3,5,False,,Pontiac,United States,True
+1994-06-22,1994,United States,Colombia,2,1,home_win,United States,1,3,False,,Pasadena,United States,False
+1994-06-23,1994,South Korea,Bolivia,0,0,draw,draw,0,0,False,,Foxborough,United States,True
+1994-06-23,1994,Italy,Norway,1,0,home_win,Italy,1,1,False,,East Rutherford,United States,True
+1994-06-24,1994,Sweden,Russia,3,1,home_win,Sweden,2,4,False,,Pontiac,United States,True
+1994-06-24,1994,Brazil,Cameroon,3,0,home_win,Brazil,3,3,False,,Palo Alto,United States,True
+1994-06-24,1994,Mexico,Republic of Ireland,2,1,home_win,Mexico,1,3,False,,Orlando,United States,True
+1994-06-25,1994,Argentina,Nigeria,2,1,home_win,Argentina,1,3,False,,Foxborough,United States,True
+1994-06-25,1994,Belgium,Netherlands,1,0,home_win,Belgium,1,1,False,,Orlando,United States,True
+1994-06-25,1994,Saudi Arabia,Morocco,2,1,home_win,Saudi Arabia,1,3,False,,East Rutherford,United States,True
+1994-06-26,1994,Bulgaria,Greece,4,0,home_win,Bulgaria,4,4,False,,Chicago,United States,True
+1994-06-26,1994,Switzerland,Colombia,0,2,away_win,Colombia,-2,2,False,,Palo Alto,United States,True
+1994-06-26,1994,United States,Romania,0,1,away_win,Romania,-1,1,False,,Pasadena,United States,False
+1994-06-27,1994,Bolivia,Spain,1,3,away_win,Spain,-2,4,False,,Chicago,United States,True
+1994-06-27,1994,Germany,South Korea,3,2,home_win,Germany,1,5,False,,Dallas,United States,True
+1994-06-28,1994,Brazil,Sweden,1,1,draw,draw,0,2,False,,Pontiac,United States,True
+1994-06-28,1994,Republic of Ireland,Norway,0,0,draw,draw,0,0,False,,East Rutherford,United States,True
+1994-06-28,1994,Italy,Mexico,1,1,draw,draw,0,2,False,,"Washington, D.C.",United States,True
+1994-06-28,1994,Russia,Cameroon,6,1,home_win,Russia,5,7,False,,Palo Alto,United States,True
+1994-06-29,1994,Morocco,Netherlands,1,2,away_win,Netherlands,-1,3,False,,Orlando,United States,True
+1994-06-29,1994,Belgium,Saudi Arabia,0,1,away_win,Saudi Arabia,-1,1,False,,"Washington, D.C.",United States,True
+1994-06-30,1994,Argentina,Bulgaria,0,2,away_win,Bulgaria,-2,2,False,,Dallas,United States,True
+1994-06-30,1994,Greece,Nigeria,0,2,away_win,Nigeria,-2,2,False,,Foxborough,United States,True
+1994-07-02,1994,Germany,Belgium,3,2,home_win,Germany,1,5,False,,Chicago,United States,True
+1994-07-02,1994,Spain,Switzerland,3,0,home_win,Spain,3,3,False,,"Washington, D.C.",United States,True
+1994-07-03,1994,Romania,Argentina,3,2,home_win,Romania,1,5,False,,Pasadena,United States,True
+1994-07-03,1994,Saudi Arabia,Sweden,1,3,away_win,Sweden,-2,4,False,,Dallas,United States,True
+1994-07-04,1994,Netherlands,Republic of Ireland,2,0,home_win,Netherlands,2,2,False,,Orlando,United States,True
+1994-07-04,1994,United States,Brazil,0,1,away_win,Brazil,-1,1,False,,Palo Alto,United States,False
+1994-07-05,1994,Mexico,Bulgaria,1,1,draw,draw,0,2,True,Bulgaria,East Rutherford,United States,True
+1994-07-05,1994,Nigeria,Italy,1,2,away_win,Italy,-1,3,False,,Foxborough,United States,True
+1994-07-09,1994,Italy,Spain,2,1,home_win,Italy,1,3,False,,Foxborough,United States,True
+1994-07-09,1994,Netherlands,Brazil,2,3,away_win,Brazil,-1,5,False,,Dallas,United States,True
+1994-07-10,1994,Bulgaria,Germany,2,1,home_win,Bulgaria,1,3,False,,East Rutherford,United States,True
+1994-07-10,1994,Romania,Sweden,2,2,draw,draw,0,4,True,Sweden,Palo Alto,United States,True
+1994-07-13,1994,Sweden,Brazil,0,1,away_win,Brazil,-1,1,False,,Pasadena,United States,True
+1994-07-13,1994,Bulgaria,Italy,1,2,away_win,Italy,-1,3,False,,East Rutherford,United States,True
+1994-07-16,1994,Sweden,Bulgaria,4,0,home_win,Sweden,4,4,False,,Pasadena,United States,True
+1994-07-17,1994,Brazil,Italy,0,0,draw,draw,0,0,True,Brazil,Pasadena,United States,True
+1998-06-10,1998,Brazil,Scotland,2,1,home_win,Brazil,1,3,False,,Saint-Denis,France,True
+1998-06-10,1998,Morocco,Norway,2,2,draw,draw,0,4,False,,Montpellier,France,True
+1998-06-11,1998,Cameroon,Austria,1,1,draw,draw,0,2,False,,Toulouse,France,True
+1998-06-11,1998,Italy,Chile,2,2,draw,draw,0,4,False,,Bordeaux,France,True
+1998-06-12,1998,France,South Africa,3,0,home_win,France,3,3,False,,Marseille,France,False
+1998-06-12,1998,Paraguay,Bulgaria,0,0,draw,draw,0,0,False,,Montpellier,France,True
+1998-06-12,1998,Saudi Arabia,Denmark,0,1,away_win,Denmark,-1,1,False,,Lens,France,True
+1998-06-13,1998,South Korea,Mexico,1,3,away_win,Mexico,-2,4,False,,Lyon,France,True
+1998-06-13,1998,Netherlands,Belgium,0,0,draw,draw,0,0,False,,Saint-Denis,France,True
+1998-06-13,1998,Spain,Nigeria,2,3,away_win,Nigeria,-1,5,False,,Nantes,France,True
+1998-06-14,1998,Serbia,Iran,1,0,home_win,Serbia,1,1,False,,Saint-Étienne,France,True
+1998-06-14,1998,Argentina,Japan,1,0,home_win,Argentina,1,1,False,,Toulouse,France,True
+1998-06-14,1998,Jamaica,Croatia,1,3,away_win,Croatia,-2,4,False,,Lens,France,True
+1998-06-15,1998,England,Tunisia,2,0,home_win,England,2,2,False,,Marseille,France,True
+1998-06-15,1998,Germany,United States,2,0,home_win,Germany,2,2,False,,Paris,France,True
+1998-06-15,1998,Romania,Colombia,1,0,home_win,Romania,1,1,False,,Lyon,France,True
+1998-06-16,1998,Brazil,Morocco,3,0,home_win,Brazil,3,3,False,,Nantes,France,True
+1998-06-16,1998,Scotland,Norway,1,1,draw,draw,0,2,False,,Bordeaux,France,True
+1998-06-17,1998,Chile,Austria,1,1,draw,draw,0,2,False,,Saint-Étienne,France,True
+1998-06-17,1998,Italy,Cameroon,3,0,home_win,Italy,3,3,False,,Montpellier,France,True
+1998-06-18,1998,France,Saudi Arabia,4,0,home_win,France,4,4,False,,Saint-Denis,France,False
+1998-06-18,1998,South Africa,Denmark,1,1,draw,draw,0,2,False,,Toulouse,France,True
+1998-06-19,1998,Spain,Paraguay,0,0,draw,draw,0,0,False,,Saint-Étienne,France,True
+1998-06-19,1998,Nigeria,Bulgaria,1,0,home_win,Nigeria,1,1,False,,Paris,France,True
+1998-06-20,1998,Japan,Croatia,0,1,away_win,Croatia,-1,1,False,,Nantes,France,True
+1998-06-20,1998,Netherlands,South Korea,5,0,home_win,Netherlands,5,5,False,,Marseille,France,True
+1998-06-20,1998,Belgium,Mexico,2,2,draw,draw,0,4,False,,Bordeaux,France,True
+1998-06-21,1998,United States,Iran,1,2,away_win,Iran,-1,3,False,,Lyon,France,True
+1998-06-21,1998,Argentina,Jamaica,5,0,home_win,Argentina,5,5,False,,Paris,France,True
+1998-06-21,1998,Germany,Serbia,2,2,draw,draw,0,4,False,,Lens,France,True
+1998-06-22,1998,Colombia,Tunisia,1,0,home_win,Colombia,1,1,False,,Montpellier,France,True
+1998-06-22,1998,Romania,England,2,1,home_win,Romania,1,3,False,,Toulouse,France,True
+1998-06-23,1998,Brazil,Norway,1,2,away_win,Norway,-1,3,False,,Marseille,France,True
+1998-06-23,1998,Chile,Cameroon,1,1,draw,draw,0,2,False,,Nantes,France,True
+1998-06-23,1998,Italy,Austria,2,1,home_win,Italy,1,3,False,,Saint-Denis,France,True
+1998-06-23,1998,Scotland,Morocco,0,3,away_win,Morocco,-3,3,False,,Saint-Étienne,France,True
+1998-06-24,1998,France,Denmark,2,1,home_win,France,1,3,False,,Lyon,France,False
+1998-06-24,1998,Nigeria,Paraguay,1,3,away_win,Paraguay,-2,4,False,,Toulouse,France,True
+1998-06-24,1998,South Africa,Saudi Arabia,2,2,draw,draw,0,4,False,,Bordeaux,France,True
+1998-06-24,1998,Spain,Bulgaria,6,1,home_win,Spain,5,7,False,,Lens,France,True
+1998-06-25,1998,Netherlands,Mexico,2,2,draw,draw,0,4,False,,Saint-Étienne,France,True
+1998-06-25,1998,United States,Serbia,0,1,away_win,Serbia,-1,1,False,,Nantes,France,True
+1998-06-25,1998,Belgium,South Korea,1,1,draw,draw,0,2,False,,Paris,France,True
+1998-06-25,1998,Germany,Iran,2,0,home_win,Germany,2,2,False,,Montpellier,France,True
+1998-06-26,1998,Argentina,Croatia,1,0,home_win,Argentina,1,1,False,,Bordeaux,France,True
+1998-06-26,1998,Colombia,England,0,2,away_win,England,-2,2,False,,Lens,France,True
+1998-06-26,1998,Japan,Jamaica,1,2,away_win,Jamaica,-1,3,False,,Lyon,France,True
+1998-06-26,1998,Romania,Tunisia,1,1,draw,draw,0,2,False,,Saint-Denis,France,True
+1998-06-27,1998,Brazil,Chile,4,1,home_win,Brazil,3,5,False,,Paris,France,True
+1998-06-27,1998,Italy,Norway,1,0,home_win,Italy,1,1,False,,Marseille,France,True
+1998-06-28,1998,Nigeria,Denmark,1,4,away_win,Denmark,-3,5,False,,Saint-Denis,France,True
+1998-06-28,1998,France,Paraguay,1,0,home_win,France,1,1,False,,Lens,France,False
+1998-06-29,1998,Germany,Mexico,2,1,home_win,Germany,1,3,False,,Montpellier,France,True
+1998-06-29,1998,Netherlands,Serbia,2,1,home_win,Netherlands,1,3,False,,Toulouse,France,True
+1998-06-30,1998,Argentina,England,2,2,draw,draw,0,4,True,Argentina,Saint-Étienne,France,True
+1998-06-30,1998,Romania,Croatia,0,1,away_win,Croatia,-1,1,False,,Bordeaux,France,True
+1998-07-03,1998,France,Italy,0,0,draw,draw,0,0,True,France,Saint-Denis,France,False
+1998-07-03,1998,Brazil,Denmark,3,2,home_win,Brazil,1,5,False,,Nantes,France,True
+1998-07-04,1998,Netherlands,Argentina,2,1,home_win,Netherlands,1,3,False,,Marseille,France,True
+1998-07-04,1998,Germany,Croatia,0,3,away_win,Croatia,-3,3,False,,Lyon,France,True
+1998-07-07,1998,Brazil,Netherlands,1,1,draw,draw,0,2,True,Brazil,Marseille,France,True
+1998-07-08,1998,France,Croatia,2,1,home_win,France,1,3,False,,Saint-Denis,France,False
+1998-07-11,1998,Netherlands,Croatia,1,2,away_win,Croatia,-1,3,False,,Paris,France,True
+1998-07-12,1998,France,Brazil,3,0,home_win,France,3,3,False,,Saint-Denis,France,False
+2002-05-31,2002,France,Senegal,0,1,away_win,Senegal,-1,1,False,,Seoul,South Korea,True
+2002-06-01,2002,Germany,Saudi Arabia,8,0,home_win,Germany,8,8,False,,Sapporo,Japan,True
+2002-06-01,2002,Republic of Ireland,Cameroon,1,1,draw,draw,0,2,False,,Niigata,Japan,True
+2002-06-01,2002,Uruguay,Denmark,1,2,away_win,Denmark,-1,3,False,,Ulsan,South Korea,True
+2002-06-02,2002,Argentina,Nigeria,1,0,home_win,Argentina,1,1,False,,Kashima,Japan,True
+2002-06-02,2002,England,Sweden,1,1,draw,draw,0,2,False,,Saitama,Japan,True
+2002-06-02,2002,Paraguay,South Africa,2,2,draw,draw,0,4,False,,Busan,South Korea,True
+2002-06-02,2002,Spain,Slovenia,3,1,home_win,Spain,2,4,False,,Gwangju,South Korea,True
+2002-06-03,2002,Italy,Ecuador,2,0,home_win,Italy,2,2,False,,Sapporo,Japan,True
+2002-06-03,2002,Brazil,Turkey,2,1,home_win,Brazil,1,3,False,,Ulsan,South Korea,True
+2002-06-03,2002,Croatia,Mexico,0,1,away_win,Mexico,-1,1,False,,Niigata,Japan,True
+2002-06-04,2002,China,Costa Rica,0,2,away_win,Costa Rica,-2,2,False,,Gwangju,South Korea,True
+2002-06-04,2002,Japan,Belgium,2,2,draw,draw,0,4,False,,Saitama,Japan,False
+2002-06-04,2002,South Korea,Poland,2,0,home_win,South Korea,2,2,False,,Busan,South Korea,False
+2002-06-05,2002,Germany,Republic of Ireland,1,1,draw,draw,0,2,False,,Kashima,Japan,True
+2002-06-05,2002,Russia,Tunisia,2,0,home_win,Russia,2,2,False,,Kobe,Japan,True
+2002-06-05,2002,United States,Portugal,3,2,home_win,United States,1,5,False,,Suwon,South Korea,True
+2002-06-06,2002,France,Uruguay,0,0,draw,draw,0,0,False,,Busan,South Korea,True
+2002-06-06,2002,Cameroon,Saudi Arabia,1,0,home_win,Cameroon,1,1,False,,Saitama,Japan,True
+2002-06-06,2002,Denmark,Senegal,1,1,draw,draw,0,2,False,,Daegu,South Korea,True
+2002-06-07,2002,Spain,Paraguay,3,1,home_win,Spain,2,4,False,,Jeonju,South Korea,True
+2002-06-07,2002,Sweden,Nigeria,2,1,home_win,Sweden,1,3,False,,Kobe,Japan,True
+2002-06-07,2002,Argentina,England,0,1,away_win,England,-1,1,False,,Sapporo,Japan,True
+2002-06-08,2002,South Africa,Slovenia,1,0,home_win,South Africa,1,1,False,,Daegu,South Korea,True
+2002-06-08,2002,Brazil,China,4,0,home_win,Brazil,4,4,False,,Seogwipo,South Korea,True
+2002-06-08,2002,Italy,Croatia,1,2,away_win,Croatia,-1,3,False,,Kashima,Japan,True
+2002-06-09,2002,Costa Rica,Turkey,1,1,draw,draw,0,2,False,,Incheon,South Korea,True
+2002-06-09,2002,Japan,Russia,1,0,home_win,Japan,1,1,False,,Yokohama,Japan,False
+2002-06-09,2002,Mexico,Ecuador,2,1,home_win,Mexico,1,3,False,,Rifu,Japan,True
+2002-06-10,2002,South Korea,United States,1,1,draw,draw,0,2,False,,Daegu,South Korea,False
+2002-06-10,2002,Portugal,Poland,4,0,home_win,Portugal,4,4,False,,Jeonju,South Korea,True
+2002-06-10,2002,Tunisia,Belgium,1,1,draw,draw,0,2,False,,Ōita,Japan,True
+2002-06-11,2002,Cameroon,Germany,0,2,away_win,Germany,-2,2,False,,Fukuroi,Japan,True
+2002-06-11,2002,Denmark,France,2,0,home_win,Denmark,2,2,False,,Incheon,South Korea,True
+2002-06-11,2002,Saudi Arabia,Republic of Ireland,0,3,away_win,Republic of Ireland,-3,3,False,,Yokohama,Japan,True
+2002-06-11,2002,Senegal,Uruguay,3,3,draw,draw,0,6,False,,Suwon,South Korea,True
+2002-06-12,2002,South Africa,Spain,2,3,away_win,Spain,-1,5,False,,Daejeon,South Korea,True
+2002-06-12,2002,Sweden,Argentina,1,1,draw,draw,0,2,False,,Rifu,Japan,True
+2002-06-12,2002,Nigeria,England,0,0,draw,draw,0,0,False,,Osaka,Japan,True
+2002-06-12,2002,Slovenia,Paraguay,1,3,away_win,Paraguay,-2,4,False,,Seogwipo,South Korea,True
+2002-06-13,2002,Costa Rica,Brazil,2,5,away_win,Brazil,-3,7,False,,Suwon,South Korea,True
+2002-06-13,2002,Ecuador,Croatia,1,0,home_win,Ecuador,1,1,False,,Yokohama,Japan,True
+2002-06-13,2002,Mexico,Italy,1,1,draw,draw,0,2,False,,Ōita,Japan,True
+2002-06-13,2002,Turkey,China,3,0,home_win,Turkey,3,3,False,,Seoul,South Korea,True
+2002-06-14,2002,Poland,United States,3,1,home_win,Poland,2,4,False,,Daejeon,South Korea,True
+2002-06-14,2002,South Korea,Portugal,1,0,home_win,South Korea,1,1,False,,Incheon,South Korea,False
+2002-06-14,2002,Belgium,Russia,3,2,home_win,Belgium,1,5,False,,Fukuroi,Japan,True
+2002-06-14,2002,Japan,Tunisia,2,0,home_win,Japan,2,2,False,,Osaka,Japan,False
+2002-06-15,2002,Denmark,England,0,3,away_win,England,-3,3,False,,Niigata,Japan,True
+2002-06-15,2002,Germany,Paraguay,1,0,home_win,Germany,1,1,False,,Seogwipo,South Korea,True
+2002-06-16,2002,Spain,Republic of Ireland,1,1,draw,draw,0,2,True,Spain,Suwon,South Korea,True
+2002-06-16,2002,Sweden,Senegal,1,2,away_win,Senegal,-1,3,False,,Ōita,Japan,True
+2002-06-17,2002,Mexico,United States,0,2,away_win,United States,-2,2,False,,Jeonju,South Korea,True
+2002-06-17,2002,Brazil,Belgium,2,0,home_win,Brazil,2,2,False,,Kobe,Japan,True
+2002-06-18,2002,South Korea,Italy,2,1,home_win,South Korea,1,3,False,,Daejeon,South Korea,False
+2002-06-18,2002,Japan,Turkey,0,1,away_win,Turkey,-1,1,False,,Rifu,Japan,False
+2002-06-21,2002,England,Brazil,1,2,away_win,Brazil,-1,3,False,,Fukuroi,Japan,True
+2002-06-21,2002,Germany,United States,1,0,home_win,Germany,1,1,False,,Ulsan,South Korea,True
+2002-06-22,2002,South Korea,Spain,0,0,draw,draw,0,0,True,South Korea,Gwangju,South Korea,False
+2002-06-22,2002,Senegal,Turkey,0,1,away_win,Turkey,-1,1,False,,Osaka,Japan,True
+2002-06-25,2002,South Korea,Germany,0,1,away_win,Germany,-1,1,False,,Seoul,South Korea,False
+2002-06-26,2002,Brazil,Turkey,1,0,home_win,Brazil,1,1,False,,Saitama,Japan,True
+2002-06-29,2002,South Korea,Turkey,2,3,away_win,Turkey,-1,5,False,,Daegu,South Korea,False
+2002-06-30,2002,Germany,Brazil,0,2,away_win,Brazil,-2,2,False,,Yokohama,Japan,True
+2006-06-09,2006,Germany,Costa Rica,4,2,home_win,Germany,2,6,False,,Munich,Germany,False
+2006-06-09,2006,Poland,Ecuador,0,2,away_win,Ecuador,-2,2,False,,Gelsenkirchen,Germany,True
+2006-06-10,2006,Argentina,Ivory Coast,2,1,home_win,Argentina,1,3,False,,Hamburg,Germany,True
+2006-06-10,2006,England,Paraguay,1,0,home_win,England,1,1,False,,Frankfurt am Main,Germany,True
+2006-06-10,2006,Trinidad and Tobago,Sweden,0,0,draw,draw,0,0,False,,Dortmund,Germany,True
+2006-06-11,2006,Serbia,Netherlands,0,1,away_win,Netherlands,-1,1,False,,Leipzig,Germany,True
+2006-06-11,2006,Mexico,Iran,3,1,home_win,Mexico,2,4,False,,Nuremberg,Germany,True
+2006-06-11,2006,Angola,Portugal,0,1,away_win,Portugal,-1,1,False,,Cologne,Germany,True
+2006-06-12,2006,Australia,Japan,3,1,home_win,Australia,2,4,False,,Kaiserslautern,Germany,True
+2006-06-12,2006,Italy,Ghana,2,0,home_win,Italy,2,2,False,,Hanover,Germany,True
+2006-06-12,2006,United States,Czech Republic,0,3,away_win,Czech Republic,-3,3,False,,Gelsenkirchen,Germany,True
+2006-06-13,2006,Brazil,Croatia,1,0,home_win,Brazil,1,1,False,,Berlin,Germany,True
+2006-06-13,2006,France,Switzerland,0,0,draw,draw,0,0,False,,Stuttgart,Germany,True
+2006-06-13,2006,South Korea,Togo,2,1,home_win,South Korea,1,3,False,,Frankfurt am Main,Germany,True
+2006-06-14,2006,Germany,Poland,1,0,home_win,Germany,1,1,False,,Dortmund,Germany,False
+2006-06-14,2006,Spain,Ukraine,4,0,home_win,Spain,4,4,False,,Leipzig,Germany,True
+2006-06-14,2006,Tunisia,Saudi Arabia,2,2,draw,draw,0,4,False,,Munich,Germany,True
+2006-06-15,2006,Ecuador,Costa Rica,3,0,home_win,Ecuador,3,3,False,,Hamburg,Germany,True
+2006-06-15,2006,England,Trinidad and Tobago,2,0,home_win,England,2,2,False,,Nuremberg,Germany,True
+2006-06-15,2006,Sweden,Paraguay,1,0,home_win,Sweden,1,1,False,,Berlin,Germany,True
+2006-06-16,2006,Netherlands,Ivory Coast,2,1,home_win,Netherlands,1,3,False,,Stuttgart,Germany,True
+2006-06-16,2006,Argentina,Serbia,6,0,home_win,Argentina,6,6,False,,Gelsenkirchen,Germany,True
+2006-06-16,2006,Mexico,Angola,0,0,draw,draw,0,0,False,,Hanover,Germany,True
+2006-06-17,2006,Czech Republic,Ghana,0,2,away_win,Ghana,-2,2,False,,Cologne,Germany,True
+2006-06-17,2006,Italy,United States,1,1,draw,draw,0,2,False,,Kaiserslautern,Germany,True
+2006-06-17,2006,Portugal,Iran,2,0,home_win,Portugal,2,2,False,,Frankfurt am Main,Germany,True
+2006-06-18,2006,Brazil,Australia,2,0,home_win,Brazil,2,2,False,,Munich,Germany,True
+2006-06-18,2006,France,South Korea,1,1,draw,draw,0,2,False,,Leipzig,Germany,True
+2006-06-18,2006,Japan,Croatia,0,0,draw,draw,0,0,False,,Nuremberg,Germany,True
+2006-06-19,2006,Saudi Arabia,Ukraine,0,4,away_win,Ukraine,-4,4,False,,Hamburg,Germany,True
+2006-06-19,2006,Spain,Tunisia,3,1,home_win,Spain,2,4,False,,Stuttgart,Germany,True
+2006-06-19,2006,Togo,Switzerland,0,2,away_win,Switzerland,-2,2,False,,Dortmund,Germany,True
+2006-06-20,2006,Paraguay,Trinidad and Tobago,2,0,home_win,Paraguay,2,2,False,,Kaiserslautern,Germany,True
+2006-06-20,2006,Sweden,England,2,2,draw,draw,0,4,False,,Cologne,Germany,True
+2006-06-20,2006,Costa Rica,Poland,1,2,away_win,Poland,-1,3,False,,Hanover,Germany,True
+2006-06-20,2006,Germany,Ecuador,3,0,home_win,Germany,3,3,False,,Berlin,Germany,False
+2006-06-21,2006,Iran,Angola,1,1,draw,draw,0,2,False,,Leipzig,Germany,True
+2006-06-21,2006,Ivory Coast,Serbia,3,2,home_win,Ivory Coast,1,5,False,,Munich,Germany,True
+2006-06-21,2006,Netherlands,Argentina,0,0,draw,draw,0,0,False,,Frankfurt am Main,Germany,True
+2006-06-21,2006,Portugal,Mexico,2,1,home_win,Portugal,1,3,False,,Gelsenkirchen,Germany,True
+2006-06-22,2006,Croatia,Australia,2,2,draw,draw,0,4,False,,Stuttgart,Germany,True
+2006-06-22,2006,Czech Republic,Italy,0,2,away_win,Italy,-2,2,False,,Hamburg,Germany,True
+2006-06-22,2006,Ghana,United States,2,1,home_win,Ghana,1,3,False,,Nuremberg,Germany,True
+2006-06-22,2006,Japan,Brazil,1,4,away_win,Brazil,-3,5,False,,Dortmund,Germany,True
+2006-06-23,2006,Ukraine,Tunisia,1,0,home_win,Ukraine,1,1,False,,Berlin,Germany,True
+2006-06-23,2006,Saudi Arabia,Spain,0,1,away_win,Spain,-1,1,False,,Kaiserslautern,Germany,True
+2006-06-23,2006,Switzerland,South Korea,2,0,home_win,Switzerland,2,2,False,,Hanover,Germany,True
+2006-06-23,2006,Togo,France,0,2,away_win,France,-2,2,False,,Cologne,Germany,True
+2006-06-24,2006,Germany,Sweden,2,0,home_win,Germany,2,2,False,,Munich,Germany,False
+2006-06-24,2006,Argentina,Mexico,2,1,home_win,Argentina,1,3,False,,Leipzig,Germany,True
+2006-06-25,2006,England,Ecuador,1,0,home_win,England,1,1,False,,Stuttgart,Germany,True
+2006-06-25,2006,Portugal,Netherlands,1,0,home_win,Portugal,1,1,False,,Nuremberg,Germany,True
+2006-06-26,2006,Italy,Australia,1,0,home_win,Italy,1,1,False,,Kaiserslautern,Germany,True
+2006-06-26,2006,Switzerland,Ukraine,0,0,draw,draw,0,0,True,Ukraine,Cologne,Germany,True
+2006-06-27,2006,Brazil,Ghana,3,0,home_win,Brazil,3,3,False,,Dortmund,Germany,True
+2006-06-27,2006,Spain,France,1,3,away_win,France,-2,4,False,,Hanover,Germany,True
+2006-06-30,2006,Germany,Argentina,1,1,draw,draw,0,2,True,Germany,Berlin,Germany,False
+2006-06-30,2006,Italy,Ukraine,3,0,home_win,Italy,3,3,False,,Hamburg,Germany,True
+2006-07-01,2006,Brazil,France,0,1,away_win,France,-1,1,False,,Frankfurt am Main,Germany,True
+2006-07-01,2006,England,Portugal,0,0,draw,draw,0,0,True,Portugal,Gelsenkirchen,Germany,True
+2006-07-04,2006,Germany,Italy,0,2,away_win,Italy,-2,2,False,,Dortmund,Germany,False
+2006-07-05,2006,Portugal,France,0,1,away_win,France,-1,1,False,,Munich,Germany,True
+2006-07-08,2006,Germany,Portugal,3,1,home_win,Germany,2,4,False,,Stuttgart,Germany,False
+2006-07-09,2006,Italy,France,1,1,draw,draw,0,2,True,Italy,Berlin,Germany,True
+2010-06-11,2010,South Africa,Mexico,1,1,draw,draw,0,2,False,,Johannesburg,South Africa,False
+2010-06-11,2010,Uruguay,France,0,0,draw,draw,0,0,False,,Cape Town,South Africa,True
+2010-06-12,2010,Argentina,Nigeria,1,0,home_win,Argentina,1,1,False,,Johannesburg,South Africa,True
+2010-06-12,2010,England,United States,1,1,draw,draw,0,2,False,,Rustenburg,South Africa,True
+2010-06-12,2010,South Korea,Greece,2,0,home_win,South Korea,2,2,False,,Port Elizabeth,South Africa,True
+2010-06-13,2010,Algeria,Slovenia,0,1,away_win,Slovenia,-1,1,False,,Polokwane,South Africa,True
+2010-06-13,2010,Germany,Australia,4,0,home_win,Germany,4,4,False,,Durban,South Africa,True
+2010-06-13,2010,Serbia,Ghana,0,1,away_win,Ghana,-1,1,False,,Pretoria,South Africa,True
+2010-06-14,2010,Italy,Paraguay,1,1,draw,draw,0,2,False,,Cape Town,South Africa,True
+2010-06-14,2010,Japan,Cameroon,1,0,home_win,Japan,1,1,False,,Bloemfontein,South Africa,True
+2010-06-14,2010,Netherlands,Denmark,2,0,home_win,Netherlands,2,2,False,,Johannesburg,South Africa,True
+2010-06-15,2010,Ivory Coast,Portugal,0,0,draw,draw,0,0,False,,Port Elizabeth,South Africa,True
+2010-06-15,2010,Brazil,North Korea,2,1,home_win,Brazil,1,3,False,,Johannesburg,South Africa,True
+2010-06-15,2010,New Zealand,Slovakia,1,1,draw,draw,0,2,False,,Rustenburg,South Africa,True
+2010-06-16,2010,Spain,Switzerland,0,1,away_win,Switzerland,-1,1,False,,Durban,South Africa,True
+2010-06-16,2010,South Africa,Uruguay,0,3,away_win,Uruguay,-3,3,False,,Pretoria,South Africa,False
+2010-06-16,2010,Honduras,Chile,0,1,away_win,Chile,-1,1,False,,Nelspruit,South Africa,True
+2010-06-17,2010,Argentina,South Korea,4,1,home_win,Argentina,3,5,False,,Johannesburg,South Africa,True
+2010-06-17,2010,France,Mexico,0,2,away_win,Mexico,-2,2,False,,Polokwane,South Africa,True
+2010-06-17,2010,Greece,Nigeria,2,1,home_win,Greece,1,3,False,,Bloemfontein,South Africa,True
+2010-06-18,2010,England,Algeria,0,0,draw,draw,0,0,False,,Cape Town,South Africa,True
+2010-06-18,2010,Germany,Serbia,0,1,away_win,Serbia,-1,1,False,,Port Elizabeth,South Africa,True
+2010-06-18,2010,Slovenia,United States,2,2,draw,draw,0,4,False,,Johannesburg,South Africa,True
+2010-06-19,2010,Cameroon,Denmark,1,2,away_win,Denmark,-1,3,False,,Pretoria,South Africa,True
+2010-06-19,2010,Ghana,Australia,1,1,draw,draw,0,2,False,,Rustenburg,South Africa,True
+2010-06-19,2010,Netherlands,Japan,1,0,home_win,Netherlands,1,1,False,,Durban,South Africa,True
+2010-06-20,2010,Brazil,Ivory Coast,3,1,home_win,Brazil,2,4,False,,Johannesburg,South Africa,True
+2010-06-20,2010,Italy,New Zealand,1,1,draw,draw,0,2,False,,Nelspruit,South Africa,True
+2010-06-20,2010,Slovakia,Paraguay,0,2,away_win,Paraguay,-2,2,False,,Bloemfontein,South Africa,True
+2010-06-21,2010,Portugal,North Korea,7,0,home_win,Portugal,7,7,False,,Cape Town,South Africa,True
+2010-06-21,2010,Spain,Honduras,2,0,home_win,Spain,2,2,False,,Johannesburg,South Africa,True
+2010-06-21,2010,Chile,Switzerland,1,0,home_win,Chile,1,1,False,,Port Elizabeth,South Africa,True
+2010-06-22,2010,Greece,Argentina,0,2,away_win,Argentina,-2,2,False,,Polokwane,South Africa,True
+2010-06-22,2010,Mexico,Uruguay,0,1,away_win,Uruguay,-1,1,False,,Rustenburg,South Africa,True
+2010-06-22,2010,Nigeria,South Korea,2,2,draw,draw,0,4,False,,Durban,South Africa,True
+2010-06-22,2010,South Africa,France,2,1,home_win,South Africa,1,3,False,,Bloemfontein,South Africa,False
+2010-06-23,2010,Australia,Serbia,2,1,home_win,Australia,1,3,False,,Nelspruit,South Africa,True
+2010-06-23,2010,Ghana,Germany,0,1,away_win,Germany,-1,1,False,,Johannesburg,South Africa,True
+2010-06-23,2010,Slovenia,England,0,1,away_win,England,-1,1,False,,Port Elizabeth,South Africa,True
+2010-06-23,2010,United States,Algeria,1,0,home_win,United States,1,1,False,,Pretoria,South Africa,True
+2010-06-24,2010,Cameroon,Netherlands,1,2,away_win,Netherlands,-1,3,False,,Cape Town,South Africa,True
+2010-06-24,2010,Denmark,Japan,1,3,away_win,Japan,-2,4,False,,Rustenburg,South Africa,True
+2010-06-24,2010,Paraguay,New Zealand,0,0,draw,draw,0,0,False,,Polokwane,South Africa,True
+2010-06-24,2010,Slovakia,Italy,3,2,home_win,Slovakia,1,5,False,,Johannesburg,South Africa,True
+2010-06-25,2010,Switzerland,Honduras,0,0,draw,draw,0,0,False,,Bloemfontein,South Africa,True
+2010-06-25,2010,Portugal,Brazil,0,0,draw,draw,0,0,False,,Durban,South Africa,True
+2010-06-25,2010,Chile,Spain,1,2,away_win,Spain,-1,3,False,,Pretoria,South Africa,True
+2010-06-25,2010,North Korea,Ivory Coast,0,3,away_win,Ivory Coast,-3,3,False,,Nelspruit,South Africa,True
+2010-06-26,2010,Uruguay,South Korea,2,1,home_win,Uruguay,1,3,False,,Port Elizabeth,South Africa,True
+2010-06-26,2010,United States,Ghana,1,2,away_win,Ghana,-1,3,False,,Rustenburg,South Africa,True
+2010-06-27,2010,Argentina,Mexico,3,1,home_win,Argentina,2,4,False,,Johannesburg,South Africa,True
+2010-06-27,2010,Germany,England,4,1,home_win,Germany,3,5,False,,Bloemfontein,South Africa,True
+2010-06-28,2010,Brazil,Chile,3,0,home_win,Brazil,3,3,False,,Johannesburg,South Africa,True
+2010-06-28,2010,Netherlands,Slovakia,2,1,home_win,Netherlands,1,3,False,,Durban,South Africa,True
+2010-06-29,2010,Paraguay,Japan,0,0,draw,draw,0,0,True,Paraguay,Pretoria,South Africa,True
+2010-06-29,2010,Spain,Portugal,1,0,home_win,Spain,1,1,False,,Cape Town,South Africa,True
+2010-07-02,2010,Uruguay,Ghana,1,1,draw,draw,0,2,True,Uruguay,Johannesburg,South Africa,True
+2010-07-02,2010,Netherlands,Brazil,2,1,home_win,Netherlands,1,3,False,,Port Elizabeth,South Africa,True
+2010-07-03,2010,Paraguay,Spain,0,1,away_win,Spain,-1,1,False,,Johannesburg,South Africa,True
+2010-07-03,2010,Argentina,Germany,0,4,away_win,Germany,-4,4,False,,Cape Town,South Africa,True
+2010-07-06,2010,Uruguay,Netherlands,2,3,away_win,Netherlands,-1,5,False,,Cape Town,South Africa,True
+2010-07-07,2010,Germany,Spain,0,1,away_win,Spain,-1,1,False,,Durban,South Africa,True
+2010-07-10,2010,Uruguay,Germany,2,3,away_win,Germany,-1,5,False,,Port Elizabeth,South Africa,True
+2010-07-11,2010,Netherlands,Spain,0,1,away_win,Spain,-1,1,False,,Johannesburg,South Africa,True
+2014-06-12,2014,Brazil,Croatia,3,1,home_win,Brazil,2,4,False,,São Paulo,Brazil,False
+2014-06-13,2014,Spain,Netherlands,1,5,away_win,Netherlands,-4,6,False,,Salvador,Brazil,True
+2014-06-13,2014,Chile,Australia,3,1,home_win,Chile,2,4,False,,Cuiabá,Brazil,True
+2014-06-13,2014,Mexico,Cameroon,1,0,home_win,Mexico,1,1,False,,Natal,Brazil,True
+2014-06-14,2014,Ivory Coast,Japan,2,1,home_win,Ivory Coast,1,3,False,,Recife,Brazil,True
+2014-06-14,2014,Uruguay,Costa Rica,1,3,away_win,Costa Rica,-2,4,False,,Fortaleza,Brazil,True
+2014-06-14,2014,Colombia,Greece,3,0,home_win,Colombia,3,3,False,,Belo Horizonte,Brazil,True
+2014-06-14,2014,England,Italy,1,2,away_win,Italy,-1,3,False,,Manaus,Brazil,True
+2014-06-15,2014,France,Honduras,3,0,home_win,France,3,3,False,,Porto Alegre,Brazil,True
+2014-06-15,2014,Switzerland,Ecuador,2,1,home_win,Switzerland,1,3,False,,Brasília,Brazil,True
+2014-06-15,2014,Argentina,Bosnia and Herzegovina,2,1,home_win,Argentina,1,3,False,,Rio de Janeiro,Brazil,True
+2014-06-16,2014,Germany,Portugal,4,0,home_win,Germany,4,4,False,,Salvador,Brazil,True
+2014-06-16,2014,Ghana,United States,1,2,away_win,United States,-1,3,False,,Natal,Brazil,True
+2014-06-16,2014,Iran,Nigeria,0,0,draw,draw,0,0,False,,Curitiba,Brazil,True
+2014-06-17,2014,Belgium,Algeria,2,1,home_win,Belgium,1,3,False,,Belo Horizonte,Brazil,True
+2014-06-17,2014,Brazil,Mexico,0,0,draw,draw,0,0,False,,Fortaleza,Brazil,False
+2014-06-17,2014,Russia,South Korea,1,1,draw,draw,0,2,False,,Cuiabá,Brazil,True
+2014-06-18,2014,Australia,Netherlands,2,3,away_win,Netherlands,-1,5,False,,Curitiba,Brazil,True
+2014-06-18,2014,Cameroon,Croatia,0,4,away_win,Croatia,-4,4,False,,Manaus,Brazil,True
+2014-06-18,2014,Spain,Chile,0,2,away_win,Chile,-2,2,False,,Rio de Janeiro,Brazil,True
+2014-06-19,2014,Uruguay,England,2,1,home_win,Uruguay,1,3,False,,São Paulo,Brazil,True
+2014-06-19,2014,Colombia,Ivory Coast,2,1,home_win,Colombia,1,3,False,,Brasília,Brazil,True
+2014-06-19,2014,Japan,Greece,0,0,draw,draw,0,0,False,,Natal,Brazil,True
+2014-06-20,2014,Switzerland,France,2,5,away_win,France,-3,7,False,,Salvador,Brazil,True
+2014-06-20,2014,Honduras,Ecuador,1,2,away_win,Ecuador,-1,3,False,,Curitiba,Brazil,True
+2014-06-20,2014,Italy,Costa Rica,0,1,away_win,Costa Rica,-1,1,False,,Recife,Brazil,True
+2014-06-21,2014,Argentina,Iran,1,0,home_win,Argentina,1,1,False,,Belo Horizonte,Brazil,True
+2014-06-21,2014,Germany,Ghana,2,2,draw,draw,0,4,False,,Fortaleza,Brazil,True
+2014-06-21,2014,Nigeria,Bosnia and Herzegovina,1,0,home_win,Nigeria,1,1,False,,Cuiabá,Brazil,True
+2014-06-22,2014,Belgium,Russia,1,0,home_win,Belgium,1,1,False,,Rio de Janeiro,Brazil,True
+2014-06-22,2014,South Korea,Algeria,2,4,away_win,Algeria,-2,6,False,,Porto Alegre,Brazil,True
+2014-06-22,2014,United States,Portugal,2,2,draw,draw,0,4,False,,Manaus,Brazil,True
+2014-06-23,2014,Croatia,Mexico,1,3,away_win,Mexico,-2,4,False,,Recife,Brazil,True
+2014-06-23,2014,Australia,Spain,0,3,away_win,Spain,-3,3,False,,Curitiba,Brazil,True
+2014-06-23,2014,Brazil,Cameroon,4,1,home_win,Brazil,3,5,False,,Brasília,Brazil,False
+2014-06-23,2014,Netherlands,Chile,2,0,home_win,Netherlands,2,2,False,,São Paulo,Brazil,True
+2014-06-24,2014,Japan,Colombia,1,4,away_win,Colombia,-3,5,False,,Cuiabá,Brazil,True
+2014-06-24,2014,Italy,Uruguay,0,1,away_win,Uruguay,-1,1,False,,Natal,Brazil,True
+2014-06-24,2014,Greece,Ivory Coast,2,1,home_win,Greece,1,3,False,,Fortaleza,Brazil,True
+2014-06-24,2014,Costa Rica,England,0,0,draw,draw,0,0,False,,Belo Horizonte,Brazil,True
+2014-06-25,2014,Bosnia and Herzegovina,Iran,3,1,home_win,Bosnia and Herzegovina,2,4,False,,Salvador,Brazil,True
+2014-06-25,2014,Ecuador,France,0,0,draw,draw,0,0,False,,Rio de Janeiro,Brazil,True
+2014-06-25,2014,Honduras,Switzerland,0,3,away_win,Switzerland,-3,3,False,,Manaus,Brazil,True
+2014-06-25,2014,Nigeria,Argentina,2,3,away_win,Argentina,-1,5,False,,Porto Alegre,Brazil,True
+2014-06-26,2014,Algeria,Russia,1,1,draw,draw,0,2,False,,Curitiba,Brazil,True
+2014-06-26,2014,South Korea,Belgium,0,1,away_win,Belgium,-1,1,False,,São Paulo,Brazil,True
+2014-06-26,2014,Portugal,Ghana,2,1,home_win,Portugal,1,3,False,,Brasília,Brazil,True
+2014-06-26,2014,United States,Germany,0,1,away_win,Germany,-1,1,False,,Recife,Brazil,True
+2014-06-28,2014,Brazil,Chile,1,1,draw,draw,0,2,True,Brazil,Belo Horizonte,Brazil,False
+2014-06-28,2014,Colombia,Uruguay,2,0,home_win,Colombia,2,2,False,,Rio de Janeiro,Brazil,True
+2014-06-29,2014,Costa Rica,Greece,1,1,draw,draw,0,2,True,Costa Rica,Recife,Brazil,True
+2014-06-29,2014,Netherlands,Mexico,2,1,home_win,Netherlands,1,3,False,,Fortaleza,Brazil,True
+2014-06-30,2014,Germany,Algeria,2,1,home_win,Germany,1,3,False,,Porto Alegre,Brazil,True
+2014-06-30,2014,France,Nigeria,2,0,home_win,France,2,2,False,,Brasília,Brazil,True
+2014-07-01,2014,Argentina,Switzerland,1,0,home_win,Argentina,1,1,False,,São Paulo,Brazil,True
+2014-07-01,2014,Belgium,United States,2,1,home_win,Belgium,1,3,False,,Salvador,Brazil,True
+2014-07-04,2014,Brazil,Colombia,2,1,home_win,Brazil,1,3,False,,Fortaleza,Brazil,False
+2014-07-04,2014,France,Germany,0,1,away_win,Germany,-1,1,False,,Rio de Janeiro,Brazil,True
+2014-07-05,2014,Argentina,Belgium,1,0,home_win,Argentina,1,1,False,,Brasília,Brazil,True
+2014-07-05,2014,Netherlands,Costa Rica,0,0,draw,draw,0,0,True,Netherlands,Salvador,Brazil,True
+2014-07-08,2014,Brazil,Germany,1,7,away_win,Germany,-6,8,False,,Belo Horizonte,Brazil,False
+2014-07-09,2014,Netherlands,Argentina,0,0,draw,draw,0,0,True,Argentina,São Paulo,Brazil,True
+2014-07-12,2014,Brazil,Netherlands,0,3,away_win,Netherlands,-3,3,False,,Brasília,Brazil,False
+2014-07-13,2014,Germany,Argentina,1,0,home_win,Germany,1,1,False,,Rio de Janeiro,Brazil,True
+2018-06-14,2018,Russia,Saudi Arabia,5,0,home_win,Russia,5,5,False,,Moscow,Russia,False
+2018-06-15,2018,Morocco,Iran,0,1,away_win,Iran,-1,1,False,,Saint Petersburg,Russia,True
+2018-06-15,2018,Portugal,Spain,3,3,draw,draw,0,6,False,,Sochi,Russia,True
+2018-06-15,2018,Egypt,Uruguay,0,1,away_win,Uruguay,-1,1,False,,Ekaterinburg,Russia,True
+2018-06-16,2018,Peru,Denmark,0,1,away_win,Denmark,-1,1,False,,Saransk,Russia,True
+2018-06-16,2018,Croatia,Nigeria,2,0,home_win,Croatia,2,2,False,,Kaliningrad,Russia,True
+2018-06-16,2018,France,Australia,2,1,home_win,France,1,3,False,,Kazan,Russia,True
+2018-06-16,2018,Argentina,Iceland,1,1,draw,draw,0,2,False,,Moscow,Russia,True
+2018-06-17,2018,Costa Rica,Serbia,0,1,away_win,Serbia,-1,1,False,,Samara,Russia,True
+2018-06-17,2018,Germany,Mexico,0,1,away_win,Mexico,-1,1,False,,Moscow,Russia,True
+2018-06-17,2018,Brazil,Switzerland,1,1,draw,draw,0,2,False,,Rostov-on-Don,Russia,True
+2018-06-18,2018,Sweden,South Korea,1,0,home_win,Sweden,1,1,False,,Nizhny Novgorod,Russia,True
+2018-06-18,2018,Belgium,Panama,3,0,home_win,Belgium,3,3,False,,Sochi,Russia,True
+2018-06-18,2018,Tunisia,England,1,2,away_win,England,-1,3,False,,Volgograd,Russia,True
+2018-06-19,2018,Colombia,Japan,1,2,away_win,Japan,-1,3,False,,Saransk,Russia,True
+2018-06-19,2018,Poland,Senegal,1,2,away_win,Senegal,-1,3,False,,Moscow,Russia,True
+2018-06-19,2018,Russia,Egypt,3,1,home_win,Russia,2,4,False,,Saint Petersburg,Russia,False
+2018-06-20,2018,Portugal,Morocco,1,0,home_win,Portugal,1,1,False,,Moscow,Russia,True
+2018-06-20,2018,Uruguay,Saudi Arabia,1,0,home_win,Uruguay,1,1,False,,Rostov-on-Don,Russia,True
+2018-06-20,2018,Iran,Spain,0,1,away_win,Spain,-1,1,False,,Kazan,Russia,True
+2018-06-21,2018,Argentina,Croatia,0,3,away_win,Croatia,-3,3,False,,Nizhny Novgorod,Russia,True
+2018-06-21,2018,Denmark,Australia,1,1,draw,draw,0,2,False,,Samara,Russia,True
+2018-06-21,2018,France,Peru,1,0,home_win,France,1,1,False,,Ekaterinburg,Russia,True
+2018-06-22,2018,Brazil,Costa Rica,2,0,home_win,Brazil,2,2,False,,Saint Petersburg,Russia,True
+2018-06-22,2018,Nigeria,Iceland,2,0,home_win,Nigeria,2,2,False,,Volgograd,Russia,True
+2018-06-22,2018,Serbia,Switzerland,1,2,away_win,Switzerland,-1,3,False,,Kaliningrad,Russia,True
+2018-06-23,2018,Belgium,Tunisia,5,2,home_win,Belgium,3,7,False,,Moscow,Russia,True
+2018-06-23,2018,South Korea,Mexico,1,2,away_win,Mexico,-1,3,False,,Rostov-on-Don,Russia,True
+2018-06-23,2018,Germany,Sweden,2,1,home_win,Germany,1,3,False,,Sochi,Russia,True
+2018-06-24,2018,Poland,Colombia,0,3,away_win,Colombia,-3,3,False,,Kazan,Russia,True
+2018-06-24,2018,England,Panama,6,1,home_win,England,5,7,False,,Nizhny Novgorod,Russia,True
+2018-06-24,2018,Japan,Senegal,2,2,draw,draw,0,4,False,,Ekaterinburg,Russia,True
+2018-06-25,2018,Spain,Morocco,2,2,draw,draw,0,4,False,,Kaliningrad,Russia,True
+2018-06-25,2018,Iran,Portugal,1,1,draw,draw,0,2,False,,Saransk,Russia,True
+2018-06-25,2018,Russia,Uruguay,0,3,away_win,Uruguay,-3,3,False,,Samara,Russia,False
+2018-06-25,2018,Saudi Arabia,Egypt,2,1,home_win,Saudi Arabia,1,3,False,,Volgograd,Russia,True
+2018-06-26,2018,Iceland,Croatia,1,2,away_win,Croatia,-1,3,False,,Rostov-on-Don,Russia,True
+2018-06-26,2018,Nigeria,Argentina,1,2,away_win,Argentina,-1,3,False,,Saint Petersburg,Russia,True
+2018-06-26,2018,Australia,Peru,0,2,away_win,Peru,-2,2,False,,Sochi,Russia,True
+2018-06-26,2018,Denmark,France,0,0,draw,draw,0,0,False,,Moscow,Russia,True
+2018-06-27,2018,South Korea,Germany,2,0,home_win,South Korea,2,2,False,,Kazan,Russia,True
+2018-06-27,2018,Mexico,Sweden,0,3,away_win,Sweden,-3,3,False,,Ekaterinburg,Russia,True
+2018-06-27,2018,Serbia,Brazil,0,2,away_win,Brazil,-2,2,False,,Moscow,Russia,True
+2018-06-27,2018,Switzerland,Costa Rica,2,2,draw,draw,0,4,False,,Nizhny Novgorod,Russia,True
+2018-06-28,2018,Japan,Poland,0,1,away_win,Poland,-1,1,False,,Volgograd,Russia,True
+2018-06-28,2018,Senegal,Colombia,0,1,away_win,Colombia,-1,1,False,,Samara,Russia,True
+2018-06-28,2018,Panama,Tunisia,1,2,away_win,Tunisia,-1,3,False,,Saransk,Russia,True
+2018-06-28,2018,England,Belgium,0,1,away_win,Belgium,-1,1,False,,Kaliningrad,Russia,True
+2018-06-30,2018,Uruguay,Portugal,2,1,home_win,Uruguay,1,3,False,,Sochi,Russia,True
+2018-06-30,2018,France,Argentina,4,3,home_win,France,1,7,False,,Kazan,Russia,True
+2018-07-01,2018,Russia,Spain,1,1,draw,draw,0,2,True,Russia,Moscow,Russia,False
+2018-07-01,2018,Croatia,Denmark,1,1,draw,draw,0,2,True,Croatia,Nizhny Novgorod,Russia,True
+2018-07-02,2018,Belgium,Japan,3,2,home_win,Belgium,1,5,False,,Rostov-on-Don,Russia,True
+2018-07-02,2018,Brazil,Mexico,2,0,home_win,Brazil,2,2,False,,Samara,Russia,True
+2018-07-03,2018,Sweden,Switzerland,1,0,home_win,Sweden,1,1,False,,Saint Petersburg,Russia,True
+2018-07-03,2018,Colombia,England,1,1,draw,draw,0,2,True,England,Moscow,Russia,True
+2018-07-06,2018,Uruguay,France,0,2,away_win,France,-2,2,False,,Nizhny Novgorod,Russia,True
+2018-07-06,2018,Brazil,Belgium,1,2,away_win,Belgium,-1,3,False,,Kazan,Russia,True
+2018-07-07,2018,Sweden,England,0,2,away_win,England,-2,2,False,,Samara,Russia,True
+2018-07-07,2018,Russia,Croatia,2,2,draw,draw,0,4,True,Croatia,Sochi,Russia,False
+2018-07-10,2018,France,Belgium,1,0,home_win,France,1,1,False,,Saint Petersburg,Russia,True
+2018-07-11,2018,Croatia,England,2,1,home_win,Croatia,1,3,False,,Moscow,Russia,True
+2018-07-14,2018,Belgium,England,2,0,home_win,Belgium,2,2,False,,Saint Petersburg,Russia,True
+2018-07-15,2018,France,Croatia,4,2,home_win,France,2,6,False,,Moscow,Russia,True
+2022-11-20,2022,Qatar,Ecuador,0,2,away_win,Ecuador,-2,2,False,,Al Khor,Qatar,False
+2022-11-21,2022,United States,Wales,1,1,draw,draw,0,2,False,,Al Rayyan,Qatar,True
+2022-11-21,2022,Senegal,Netherlands,0,2,away_win,Netherlands,-2,2,False,,Doha,Qatar,True
+2022-11-21,2022,England,Iran,6,2,home_win,England,4,8,False,,Al Rayyan,Qatar,True
+2022-11-22,2022,Argentina,Saudi Arabia,1,2,away_win,Saudi Arabia,-1,3,False,,Lusail,Qatar,True
+2022-11-22,2022,Mexico,Poland,0,0,draw,draw,0,0,False,,Doha,Qatar,True
+2022-11-22,2022,Denmark,Tunisia,0,0,draw,draw,0,0,False,,Al Rayyan,Qatar,True
+2022-11-22,2022,France,Australia,4,1,home_win,France,3,5,False,,Al Wakrah,Qatar,True
+2022-11-23,2022,Germany,Japan,1,2,away_win,Japan,-1,3,False,,Al Rayyan,Qatar,True
+2022-11-23,2022,Spain,Costa Rica,7,0,home_win,Spain,7,7,False,,Doha,Qatar,True
+2022-11-23,2022,Morocco,Croatia,0,0,draw,draw,0,0,False,,Al Khor,Qatar,True
+2022-11-23,2022,Belgium,Canada,1,0,home_win,Belgium,1,1,False,,Al Rayyan,Qatar,True
+2022-11-24,2022,Portugal,Ghana,3,2,home_win,Portugal,1,5,False,,Doha,Qatar,True
+2022-11-24,2022,Switzerland,Cameroon,1,0,home_win,Switzerland,1,1,False,,Al Wakrah,Qatar,True
+2022-11-24,2022,Brazil,Serbia,2,0,home_win,Brazil,2,2,False,,Lusail,Qatar,True
+2022-11-24,2022,Uruguay,South Korea,0,0,draw,draw,0,0,False,,Al Rayyan,Qatar,True
+2022-11-25,2022,England,United States,0,0,draw,draw,0,0,False,,Al Khor,Qatar,True
+2022-11-25,2022,Wales,Iran,0,2,away_win,Iran,-2,2,False,,Al Rayyan,Qatar,True
+2022-11-25,2022,Qatar,Senegal,1,3,away_win,Senegal,-2,4,False,,Doha,Qatar,False
+2022-11-25,2022,Netherlands,Ecuador,1,1,draw,draw,0,2,False,,Al Rayyan,Qatar,True
+2022-11-26,2022,Poland,Saudi Arabia,2,0,home_win,Poland,2,2,False,,Al Rayyan,Qatar,True
+2022-11-26,2022,Argentina,Mexico,2,0,home_win,Argentina,2,2,False,,Lusail,Qatar,True
+2022-11-26,2022,Tunisia,Australia,0,1,away_win,Australia,-1,1,False,,Al Wakrah,Qatar,True
+2022-11-26,2022,France,Denmark,2,1,home_win,France,1,3,False,,Doha,Qatar,True
+2022-11-27,2022,Croatia,Canada,4,1,home_win,Croatia,3,5,False,,Al Rayyan,Qatar,True
+2022-11-27,2022,Japan,Costa Rica,0,1,away_win,Costa Rica,-1,1,False,,Al Rayyan,Qatar,True
+2022-11-27,2022,Spain,Germany,1,1,draw,draw,0,2,False,,Al Khor,Qatar,True
+2022-11-27,2022,Belgium,Morocco,0,2,away_win,Morocco,-2,2,False,,Doha,Qatar,True
+2022-11-28,2022,South Korea,Ghana,2,3,away_win,Ghana,-1,5,False,,Al Rayyan,Qatar,True
+2022-11-28,2022,Portugal,Uruguay,2,0,home_win,Portugal,2,2,False,,Lusail,Qatar,True
+2022-11-28,2022,Cameroon,Serbia,3,3,draw,draw,0,6,False,,Al Wakrah,Qatar,True
+2022-11-28,2022,Brazil,Switzerland,1,0,home_win,Brazil,1,1,False,,Doha,Qatar,True
+2022-11-29,2022,Iran,United States,0,1,away_win,United States,-1,1,False,,Doha,Qatar,True
+2022-11-29,2022,Wales,England,0,3,away_win,England,-3,3,False,,Al Rayyan,Qatar,True
+2022-11-29,2022,Ecuador,Senegal,1,2,away_win,Senegal,-1,3,False,,Al Rayyan,Qatar,True
+2022-11-29,2022,Qatar,Netherlands,0,2,away_win,Netherlands,-2,2,False,,Al Khor,Qatar,False
+2022-11-30,2022,Poland,Argentina,0,2,away_win,Argentina,-2,2,False,,Doha,Qatar,True
+2022-11-30,2022,Saudi Arabia,Mexico,1,2,away_win,Mexico,-1,3,False,,Lusail,Qatar,True
+2022-11-30,2022,Australia,Denmark,1,0,home_win,Australia,1,1,False,,Al Wakrah,Qatar,True
+2022-11-30,2022,Tunisia,France,1,0,home_win,Tunisia,1,1,False,,Al Rayyan,Qatar,True
+2022-12-01,2022,Japan,Spain,2,1,home_win,Japan,1,3,False,,Al Rayyan,Qatar,True
+2022-12-01,2022,Costa Rica,Germany,2,4,away_win,Germany,-2,6,False,,Al Khor,Qatar,True
+2022-12-01,2022,Croatia,Belgium,0,0,draw,draw,0,0,False,,Al Rayyan,Qatar,True
+2022-12-01,2022,Canada,Morocco,1,2,away_win,Morocco,-1,3,False,,Doha,Qatar,True
+2022-12-02,2022,South Korea,Portugal,2,1,home_win,South Korea,1,3,False,,Al Rayyan,Qatar,True
+2022-12-02,2022,Ghana,Uruguay,0,2,away_win,Uruguay,-2,2,False,,Al Wakrah,Qatar,True
+2022-12-02,2022,Serbia,Switzerland,2,3,away_win,Switzerland,-1,5,False,,Doha,Qatar,True
+2022-12-02,2022,Cameroon,Brazil,1,0,home_win,Cameroon,1,1,False,,Lusail,Qatar,True
+2022-12-03,2022,Netherlands,United States,3,1,home_win,Netherlands,2,4,False,,Al Rayyan,Qatar,True
+2022-12-03,2022,Argentina,Australia,2,1,home_win,Argentina,1,3,False,,Al Rayyan,Qatar,True
+2022-12-04,2022,France,Poland,3,1,home_win,France,2,4,False,,Doha,Qatar,True
+2022-12-04,2022,England,Senegal,3,0,home_win,England,3,3,False,,Al Khor,Qatar,True
+2022-12-05,2022,Japan,Croatia,1,1,draw,draw,0,2,True,Croatia,Al Wakrah,Qatar,True
+2022-12-05,2022,Brazil,South Korea,4,1,home_win,Brazil,3,5,False,,Doha,Qatar,True
+2022-12-06,2022,Morocco,Spain,0,0,draw,draw,0,0,True,Morocco,Al Rayyan,Qatar,True
+2022-12-06,2022,Portugal,Switzerland,6,1,home_win,Portugal,5,7,False,,Lusail,Qatar,True
+2022-12-09,2022,Croatia,Brazil,1,1,draw,draw,0,2,True,Croatia,Al Rayyan,Qatar,True
+2022-12-09,2022,Netherlands,Argentina,2,2,draw,draw,0,4,True,Argentina,Lusail,Qatar,True
+2022-12-10,2022,Morocco,Portugal,1,0,home_win,Morocco,1,1,False,,Doha,Qatar,True
+2022-12-10,2022,England,France,1,2,away_win,France,-1,3,False,,Al Khor,Qatar,True
+2022-12-13,2022,Argentina,Croatia,3,0,home_win,Argentina,3,3,False,,Lusail,Qatar,True
+2022-12-14,2022,France,Morocco,2,0,home_win,France,2,2,False,,Al Khor,Qatar,True
+2022-12-17,2022,Croatia,Morocco,2,1,home_win,Croatia,1,3,False,,Al Rayyan,Qatar,True
+2022-12-18,2022,Argentina,France,3,3,draw,draw,0,6,True,Argentina,Lusail,Qatar,True

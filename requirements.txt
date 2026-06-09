@@ -1,0 +1,7 @@
+# Dependencias del modelo predictivo del Mundial 2026.
+# Instalar con:  pip install -r requirements.txt
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+openpyxl>=3.1     # lectura del Excel ResultadosMundial.xlsx
+scikit-learn>=1.3 # utilidades de métricas (opcional)
