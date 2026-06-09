@@ -18,9 +18,15 @@ Todo se genera en `outputs/`:
 
 | Archivo | Contenido |
 |---|---|
-| `predicciones_partidos.csv` | Los **72 partidos** de fase de grupos: goles esperados (xG), **marcador exacto** más probable, los 3 marcadores más probables, probabilidades **1X2** (local/empate/visitante), Over 2.5 y "ambos marcan". |
+| **`predicciones_mundial2026.xlsx`** | **Archivo listo para Excel** con 3 hojas (Partidos, Grupos, Ratings). Recomendado: los marcadores van como texto, así que Excel **no los convierte a fechas**. |
+| `predicciones_partidos.csv` | Los **72 partidos** de fase de grupos: goles esperados (xG), goles local/visitante por separado, **marcador exacto** más probable, los 3 marcadores más probables, probabilidades **1X2** (local/empate/visitante), Over 2.5 y "ambos marcan". |
 | `probabilidades_grupos.csv` | Por equipo: puntos esperados y **probabilidad de quedar 1º/2º/3º/4º**, de clasificar entre los 2 primeros, como mejor tercero y de **clasificar en total**. |
 | `ratings_equipos.csv` | Ranking de los 48 equipos por Elo + sus parámetros de ataque/defensa del modelo Dixon-Coles. |
+
+> ⚠️ **Si abres los `.csv` directamente en Excel**, marcadores como `1-0`, `2-0`
+> o `1-1` se convierten solos a fechas (se ven como `36526`, etc.). Para evitarlo
+> usa el archivo **`.xlsx`**, o en el CSV apóyate en las columnas
+> `goles_local` y `goles_visitante` (enteros, nunca se corrompen).
 
 ---
 
@@ -153,6 +159,7 @@ Mundial/
 │   ├── predict.py            # predicción de los 72 partidos
 │   ├── simulate.py           # Monte Carlo de la fase de grupos
 │   ├── validate.py           # backtesting
+│   ├── export_excel.py       # exportación a .xlsx (marcadores como texto)
 │   └── run_pipeline.py       # orquestador (punto de entrada)
 ├── requirements.txt
 └── README.md

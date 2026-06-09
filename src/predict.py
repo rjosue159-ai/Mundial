@@ -55,6 +55,10 @@ def predict_fixtures(model: DixonColesModel, fixtures: pd.DataFrame,
             "neutral": neutral,
             "xg_local": round(lam, 2),
             "xg_visitante": round(mu, 2),
+            # Goles como enteros separados: siempre seguros, sin que ningún
+            # programa los confunda con fechas.
+            "goles_local": int(sh),
+            "goles_visitante": int(sa),
             "marcador_exacto": f"{sh}-{sa}",
             "prob_marcador_exacto": round(p1, 3),
             "top3_marcadores": "; ".join(

@@ -19,7 +19,8 @@ import os
 import numpy as np
 import pandas as pd
 
-from . import config, data_loader, dixon_coles, elo, predict, simulate, validate
+from . import (config, data_loader, dixon_coles, elo, export_excel, predict,
+               simulate, validate)
 
 
 def _print_header(txt: str):
@@ -95,6 +96,11 @@ def main():
     ratings_path = os.path.join(config.OUT_DIR, "ratings_equipos.csv")
     ratings_df.to_csv(ratings_path, index=False, encoding="utf-8-sig")
     print(f"  Guardado: {ratings_path}")
+
+    # Libro Excel listo para usar (marcadores como texto, sin bug de fechas).
+    xlsx_path = os.path.join(config.OUT_DIR, "predicciones_mundial2026.xlsx")
+    export_excel.write_workbook(preds, standings, ratings_df, xlsx_path)
+    print(f"  Guardado: {xlsx_path}")
 
     _print_header("RESUMEN: probabilidad de clasificar por grupo")
     for g in sorted(groups):
