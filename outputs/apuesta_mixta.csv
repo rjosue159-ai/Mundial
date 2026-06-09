@@ -1,0 +1,8 @@
+﻿fecha,partido,mercado,categoria,prob,cuota_justa,tipo
+2026-06-12,Canada vs Bosnia and Herzegovina,Más de 10.5 córners (total),corners,0.552,1.81,props
+2026-06-14,Sweden vs Tunisia,Sweden o empate,gana_empate,0.71,1.41,goles
+2026-06-25,Ecuador vs Germany,Germany o empate,gana_empate,0.71,1.41,goles
+2026-06-19,Scotland vs Morocco,Gana Morocco,resultado,0.505,1.98,goles
+2026-06-20,Tunisia vs Japan,Gana Japan,resultado,0.506,1.98,goles
+2026-06-24,Mexico vs Czech Republic,Gana Mexico,resultado,0.507,1.97,goles
+2026-06-18,Switzerland vs Bosnia and Herzegovina,Más de 9.5 tiros al arco (total),tiros,0.555,1.8,props

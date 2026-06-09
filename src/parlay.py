@@ -26,21 +26,109 @@ def _goals_legs(preds: pd.DataFrame) -> pd.DataFrame:
     rows = []
     for r in preds.itertuples(index=False):
         part = f"{r.local} vs {r.visitante}"
-        for sel, p in [
-            (f"Gana {r.local}", r.prob_local),
-            ("Empate", r.prob_empate),
-            (f"Gana {r.visitante}", r.prob_visitante),
-            ("Más de 2.5 goles", r.prob_over_2_5),
-            ("Ambos marcan", r.prob_ambos_marcan),
+        for sel, p, cat in [
+            (f"Gana {r.local}", r.prob_local, "resultado"),
+            ("Empate", r.prob_empate, "resultado"),
+            (f"Gana {r.visitante}", r.prob_visitante, "resultado"),
+            ("Más de 2.5 goles", r.prob_over_2_5, "goles"),
+            ("Ambos marcan", r.prob_ambos_marcan, "goles"),
             # Doble oportunidad ("gana o empate") — patas seguras de cuota baja.
-            (f"{r.local} o empate", r.prob_local + r.prob_empate),
-            (f"{r.visitante} o empate", r.prob_empate + r.prob_visitante),
+            (f"{r.local} o empate", r.prob_local + r.prob_empate, "gana_empate"),
+            (f"{r.visitante} o empate", r.prob_empate + r.prob_visitante, "gana_empate"),
         ]:
             p = min(max(p, 1e-6), 0.999)
             rows.append({"fecha": r.fecha, "partido": part, "mercado": sel,
-                         "prob": p, "cuota_justa": round(1 / p, 2),
-                         "tipo": "goles"})
+                         "categoria": cat, "prob": p,
+                         "cuota_justa": round(1 / p, 2), "tipo": "goles"})
     return pd.DataFrame(rows)
+
+
+def _all_legs(preds: pd.DataFrame, stats) -> pd.DataFrame:
+    """Catálogo completo de patas: goles/doble oportunidad + córners/tiros."""
+    legs = _goals_legs(preds)
+    if stats is not None:
+        pr = props.props_for_fixtures(_fixtures_from_preds(preds), stats)
+        if not pr.empty:
+            pr["tipo"] = "props"
+            legs = pd.concat([legs, pr[["fecha", "partido", "mercado", "categoria",
+                                        "prob", "cuota_justa", "tipo"]]],
+                             ignore_index=True)
+    return legs
+
+
+def build_mixed_parlay(preds: pd.DataFrame, stats, target_odds: float = 50.0,
+                       min_por_categoria: dict | None = None,
+                       max_legs: int = 7) -> tuple[pd.DataFrame, dict]:
+    """Combinada que MEZCLA categorías (gana_empate + córners + tiros…).
+
+    `min_por_categoria` exige un mínimo de patas de cada categoría; el resto las
+    elige la búsqueda para acercar el producto de cuotas al objetivo.
+    """
+    if min_por_categoria is None:
+        min_por_categoria = {"gana_empate": 2, "corners": 1, "tiros": 1}
+    legs = _all_legs(preds, stats)
+
+    # Pool por categoría con VARIEDAD de cuotas (estratificado por bandas), para
+    # que la combinada pueda llegar al objetivo. Una sola pata por partido.
+    bandas = {"gana_empate": (1.38, 1.75), "corners": (1.8, 4.5),
+              "tiros": (1.8, 4.5), "goles": (1.9, 3.2), "resultado": (1.9, 4.5)}
+    sub_bandas = [(1.38, 1.8), (1.8, 2.4), (2.4, 3.2), (3.2, 4.5)]
+    parts = []
+    for cat, (lo, hi) in bandas.items():
+        c = legs[(legs.categoria == cat) & (legs.cuota_justa >= lo)
+                 & (legs.cuota_justa <= hi)]
+        c = c.sort_values("prob", ascending=False).drop_duplicates("partido")
+        for slo, shi in sub_bandas:
+            parts.append(c[(c.cuota_justa >= slo) & (c.cuota_justa < shi)].head(5))
+    pool = pd.concat(parts).drop_duplicates(["partido", "mercado"]).reset_index(drop=True)
+
+    import numpy as np
+    cuotas = pool.cuota_justa.to_numpy()
+    logc = np.log(cuotas)
+    partido_code = pd.factorize(pool.partido)[0]
+    log_target = math.log(target_odds)
+    need = min_por_categoria
+    # Índices de patas por categoría.
+    by_cat = {c: pool.index[pool.categoria == c].to_numpy() for c in pool.categoria.unique()}
+    base_k = sum(need.values())
+    rng = np.random.default_rng(7)
+
+    # Búsqueda aleatoria dirigida: muestrea combos válidos (mínimos por categoría
+    # + partidos distintos) y guarda el de producto más cercano al objetivo.
+    best = None
+    for _ in range(60000):
+        k = base_k + int(rng.integers(0, 5))           # base + 0..4 patas extra
+        chosen, used_matches = [], set()
+        ok = True
+        # primero las patas mínimas exigidas por categoría
+        plan = []
+        for cat, m in need.items():
+            plan += [cat] * m
+        plan += [None] * (k - base_k)                   # extras de cualquier cat
+        rng.shuffle(plan)
+        for cat in plan:
+            opts = by_cat.get(cat) if cat else pool.index.to_numpy()
+            opts = [i for i in opts if partido_code[i] not in used_matches]
+            if not opts:
+                ok = False
+                break
+            i = int(rng.choice(opts))
+            chosen.append(i)
+            used_matches.add(partido_code[i])
+        if not ok or len(chosen) != k:
+            continue
+        log_odds = float(logc[chosen].sum())
+        dist = abs(log_odds - log_target)
+        if best is None or dist < best[0]:
+            best = (dist, list(chosen))
+    if best is None:
+        raise RuntimeError("No se encontró combinación; revisá stats/bandas.")
+    sub = pool.loc[best[1]].sort_values(["categoria", "fecha"]).reset_index(drop=True)
+    odds = float(sub.cuota_justa.prod())
+    prob = float(sub.prob.prod())
+    resumen = {"cuota_total_justa": round(odds, 1), "prob_combinada": round(prob, 4),
+               "uno_de_cada": round(1 / prob), "n_patas": len(sub)}
+    return sub, resumen
 
 
 def build_safe_parlay(preds: pd.DataFrame, target_odds: float = 50.0,
@@ -154,7 +242,13 @@ def main(target: float = 50.0, style: str = "seguras"):
     preds["fecha"] = preds["fecha"].dt.date
 
     usando_ejemplo = False
-    if style == "seguras":
+    if style == "mixta":
+        stats = props.load_team_stats()
+        usando_ejemplo = stats is not None and not os.path.exists(props.STATS_CSV)
+        sub, resumen = build_mixed_parlay(preds, stats, target_odds=target)
+        titulo = f"COMBINADA MIXTA (gana o empate + córners + tiros) — objetivo {target:.0f}x"
+        fuente = "modelo de goles (doble oportunidad) + stats de córners/tiros"
+    elif style == "seguras":
         sub, resumen = build_safe_parlay(preds, target_odds=target)
         titulo = f"COMBINADA SEGURA (gana o empate) — objetivo {target:.0f}x"
         fuente = "modelo de goles — doble oportunidad (1X / X2)"
@@ -187,7 +281,8 @@ def main(target: float = 50.0, style: str = "seguras"):
     print(f"\nRecordá: una combinada ~{target:.0f}x es un tiro largo por diseño "
           f"(~{resumen['prob_combinada']*100:.1f}% según el modelo). Apostá con cabeza.")
 
-    fname = "apuesta_segura.csv" if style == "seguras" else "apuesta_loca.csv"
+    fname = {"seguras": "apuesta_segura.csv", "mixta": "apuesta_mixta.csv"}.get(
+        style, "apuesta_loca.csv")
     out = os.path.join(config.OUT_DIR, fname)
     sub.to_csv(out, index=False, encoding="utf-8-sig")
     print(f"\nGuardado: {out}")
@@ -197,10 +292,10 @@ def main(target: float = 50.0, style: str = "seguras"):
 if __name__ == "__main__":
     import sys
     args = sys.argv[1:]
-    style = "seguras"
+    style = "mixta"
     target = 50.0
     for a in args:
-        if a in ("locas", "seguras"):
+        if a in ("locas", "seguras", "mixta"):
             style = a
         else:
             try:

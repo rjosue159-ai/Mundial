@@ -110,12 +110,15 @@ Entrenando sólo con datos **anteriores** a una fecha y prediciendo los partidos
 **probabilidad real de que toda entre**. Dos estilos:
 
 ```bash
+python -m src.parlay mixta 50     # MEZCLA: gana o empate + córners + tiros
 python -m src.parlay seguras 50   # muchas patas "gana o empate" 1.40-1.60
 python -m src.parlay locas 50     # pocas patas long-shot + córners/tiros
 ```
 
-- **`seguras`** (por defecto): doble oportunidad (1X / X2). Junta ~10-11 patas
-  de cuota baja (cada una ~70 %) hasta llegar al objetivo → `apuesta_segura.csv`.
+- **`mixta`** (por defecto): combina categorías (≥2 gana-o-empate, ≥1 córners,
+  ≥1 tiros, + extras) hasta el objetivo → `apuesta_mixta.csv`.
+- **`seguras`**: doble oportunidad (1X / X2). Junta ~10-11 patas de cuota baja
+  (cada una ~70 %) → `apuesta_segura.csv`.
 - **`locas`**: pocas patas de cuota alta (underdogs, overs, córners/tiros) →
   `apuesta_loca.csv`.
 

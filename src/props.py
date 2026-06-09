@@ -66,6 +66,7 @@ def props_for_fixtures(fixtures: pd.DataFrame, stats: pd.DataFrame) -> pd.DataFr
         for kind, etq in [("corners", "córners"), ("sot", "tiros al arco")]:
             tot, he, ae = _expected(r.home_team, r.away_team, stats, kind)
             base = round(tot) - 0.5
+            cat = "corners" if kind == "corners" else "tiros"
             for offset in (0, 1, 2, 3, 4):       # línea base y líneas más altas
                 line = max(base + offset, 1.5)
                 p_over = _over_prob(line, tot)
@@ -74,6 +75,7 @@ def props_for_fixtures(fixtures: pd.DataFrame, stats: pd.DataFrame) -> pd.DataFr
                         "fecha": pd.Timestamp(r.match_date).date(),
                         "partido": part,
                         "mercado": f"Más de {line:.1f} {etq} (total)",
+                        "categoria": cat,
                         "esperado": round(tot, 1),
                         "prob": round(p_over, 3),
                         "cuota_justa": round(1 / p_over, 2),
