@@ -104,15 +104,25 @@ Entrenando sólo con datos **anteriores** a una fecha y prediciendo los partidos
 
 ---
 
-## 4b. Apuesta combinada "loca" (~50x) + córners/tiros
+## 4b. Apuestas combinadas (~50x): dos estilos
 
-`src/parlay.py` arma una combinada de cuota objetivo (50x por defecto) eligiendo
-las patas long-shot que el modelo más valora, de partidos distintos, y reporta
-la **probabilidad real de que toda la combinada entre**.
+`src/parlay.py` arma una combinada de cuota objetivo y reporta la
+**probabilidad real de que toda entre**. Dos estilos:
 
 ```bash
-python -m src.parlay        # genera outputs/apuesta_loca.csv
+python -m src.parlay seguras 50   # muchas patas "gana o empate" 1.40-1.60
+python -m src.parlay locas 50     # pocas patas long-shot + córners/tiros
 ```
+
+- **`seguras`** (por defecto): doble oportunidad (1X / X2). Junta ~10-11 patas
+  de cuota baja (cada una ~70 %) hasta llegar al objetivo → `apuesta_segura.csv`.
+- **`locas`**: pocas patas de cuota alta (underdogs, overs, córners/tiros) →
+  `apuesta_loca.csv`.
+
+> 🧠 **Clave:** apilar muchas patas "seguras" NO la hace segura. 11 patas al
+> 70 % = 0.70¹¹ ≈ **2 %**. A igual cuota total (~50x), la combinada segura y la
+> loca tienen la **misma** probabilidad de entrar (~2 %); cambia la *sensación*,
+> no el riesgo.
 
 - Mercados de **goles** (gana/empate/over 2.5/ambos marcan): salen del modelo
   validado.

@@ -14,6 +14,7 @@ pague MÁS que la cuota justa, hay valor.
 from __future__ import annotations
 
 import itertools
+import math
 import os
 
 import pandas as pd
@@ -31,11 +32,48 @@ def _goals_legs(preds: pd.DataFrame) -> pd.DataFrame:
             (f"Gana {r.visitante}", r.prob_visitante),
             ("Más de 2.5 goles", r.prob_over_2_5),
             ("Ambos marcan", r.prob_ambos_marcan),
+            # Doble oportunidad ("gana o empate") — patas seguras de cuota baja.
+            (f"{r.local} o empate", r.prob_local + r.prob_empate),
+            (f"{r.visitante} o empate", r.prob_empate + r.prob_visitante),
         ]:
+            p = min(max(p, 1e-6), 0.999)
             rows.append({"fecha": r.fecha, "partido": part, "mercado": sel,
                          "prob": p, "cuota_justa": round(1 / p, 2),
                          "tipo": "goles"})
     return pd.DataFrame(rows)
+
+
+def build_safe_parlay(preds: pd.DataFrame, target_odds: float = 50.0,
+                      min_leg: float = 1.40, max_leg: float = 1.60,
+                      k_min: int = 6, k_max: int = 14) -> tuple[pd.DataFrame, dict]:
+    """Combinada de muchas patas "seguras" (cuota baja) tipo gana-o-empate.
+
+    Toma la mejor pata de cuota baja de cada partido (una por partido, así son
+    independientes) y busca el subconjunto cuyo producto de cuotas quede más
+    cerca del objetivo.
+    """
+    legs = _goals_legs(preds)
+    cand = legs[(legs.cuota_justa >= min_leg) & (legs.cuota_justa <= max_leg)].copy()
+    # Una sola pata por partido (la más probable = la más segura).
+    cand = cand.sort_values("prob", ascending=False).drop_duplicates("partido")
+    pool = cand.head(18).reset_index(drop=True)
+
+    cuotas = pool.cuota_justa.to_numpy()
+    n = len(pool)
+    log_target = math.log(target_odds)
+    best = None
+    for k in range(k_min, min(k_max, n) + 1):
+        for combo in itertools.combinations(range(n), k):
+            log_odds = float(sum(math.log(cuotas[i]) for i in combo))
+            dist = abs(log_odds - log_target)
+            if best is None or dist < best[0]:
+                best = (dist, combo)
+    sub = pool.iloc[list(best[1])].sort_values("fecha").reset_index(drop=True)
+    odds = float(sub.cuota_justa.prod())
+    prob = float(sub.prob.prod())
+    resumen = {"cuota_total_justa": round(odds, 1), "prob_combinada": round(prob, 4),
+               "uno_de_cada": round(1 / prob), "n_patas": len(sub)}
+    return sub, resumen
 
 
 def build_parlay(preds: pd.DataFrame, target_odds: float = 50.0,
@@ -66,7 +104,6 @@ def build_parlay(preds: pd.DataFrame, target_odds: float = 50.0,
 
     # Búsqueda en numpy/python puro (rápida): combinación de partidos distintos
     # cuyo producto de cuotas quede más cerca del objetivo.
-    import math
     cuotas = pool.cuota_justa.to_numpy()
     partido_code = pd.factorize(pool.partido)[0]
     n = len(pool)
@@ -109,21 +146,32 @@ def _fixtures_from_preds(preds: pd.DataFrame) -> pd.DataFrame:
         ["match_date", "home_team", "away_team"]]
 
 
-def main(target: float = 50.0):
+def main(target: float = 50.0, style: str = "seguras"):
+    """style='seguras' (muchas patas gana-o-empate 1.40-1.60) o
+    'locas' (pocas patas long-shot + córners/tiros)."""
     preds = pd.read_csv(os.path.join(config.OUT_DIR, "predicciones_partidos.csv"),
                         parse_dates=["fecha"])
     preds["fecha"] = preds["fecha"].dt.date
-    stats = props.load_team_stats()
-    usando_ejemplo = stats is not None and not os.path.exists(props.STATS_CSV)
-    sub, resumen = build_parlay(preds, target_odds=target, stats=stats)
 
-    print("=" * 68)
-    print(f"APUESTA LOCA — combinada objetivo {target:.0f}x")
-    print("=" * 68)
-    fuente = "modelo de goles + stats de córners/tiros" if stats is not None \
-        else "modelo de goles (sin stats de córners/tiros)"
+    usando_ejemplo = False
+    if style == "seguras":
+        sub, resumen = build_safe_parlay(preds, target_odds=target)
+        titulo = f"COMBINADA SEGURA (gana o empate) — objetivo {target:.0f}x"
+        fuente = "modelo de goles — doble oportunidad (1X / X2)"
+    else:
+        stats = props.load_team_stats()
+        usando_ejemplo = stats is not None and not os.path.exists(props.STATS_CSV)
+        sub, resumen = build_parlay(preds, target_odds=target, stats=stats)
+        titulo = f"APUESTA LOCA (long-shots) — objetivo {target:.0f}x"
+        fuente = "modelo de goles + stats de córners/tiros" if stats is not None \
+            else "modelo de goles (sin stats de córners/tiros)"
+
+    print("=" * 70)
+    print(titulo)
+    print("=" * 70)
     print(f"Fuente: {fuente}")
-    print(f"Cuota total (justa del modelo): {resumen['cuota_total_justa']}x")
+    print(f"Patas: {resumen['n_patas']}   |   "
+          f"Cuota total (justa del modelo): {resumen['cuota_total_justa']}x")
     print(f"Probabilidad de que entre TODA: {resumen['prob_combinada']*100:.2f}% "
           f"(~1 de cada {resumen['uno_de_cada']})\n")
     for r in sub.itertuples(index=False):
@@ -136,14 +184,27 @@ def main(target: float = 50.0):
               "(DATOS DE EJEMPLO, no reales).")
         print("   Corré scripts/fetch_stats_sofascore.py en tu PC para generar "
               "data/team_stats.csv y reemplazarlas por estimaciones reales.")
-    print("\nRecordá: una combinada ~50x es un tiro largo por diseño "
-          f"(~{resumen['prob_combinada']*100:.0f}% según el modelo). Apostá con cabeza.")
+    print(f"\nRecordá: una combinada ~{target:.0f}x es un tiro largo por diseño "
+          f"(~{resumen['prob_combinada']*100:.1f}% según el modelo). Apostá con cabeza.")
 
-    out = os.path.join(config.OUT_DIR, "apuesta_loca.csv")
+    fname = "apuesta_segura.csv" if style == "seguras" else "apuesta_loca.csv"
+    out = os.path.join(config.OUT_DIR, fname)
     sub.to_csv(out, index=False, encoding="utf-8-sig")
     print(f"\nGuardado: {out}")
     return sub, resumen
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    args = sys.argv[1:]
+    style = "seguras"
+    target = 50.0
+    for a in args:
+        if a in ("locas", "seguras"):
+            style = a
+        else:
+            try:
+                target = float(a)
+            except ValueError:
+                pass
+    main(target=target, style=style)
