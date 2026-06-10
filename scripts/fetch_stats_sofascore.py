@@ -137,6 +137,14 @@ def main():
             print(f"  ! error con {name}: {e}")
             time.sleep(PAUSE)
 
+    if not rows:
+        print("\n✗ No se obtuvo ningún dato (¿sin internet o SofaScore bloqueó "
+              "la IP con 403?).")
+        print("  NO se sobrescribe data/team_stats.csv para no perder datos "
+              "previos. Corré esto en una máquina con internet, o usá "
+              "cloudscraper/API-Football, o llená el CSV a mano.")
+        return
+
     out = os.path.join(DATA_DIR, "team_stats.csv")
     with open(out, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=["team", "matches", "corners_for_avg",
