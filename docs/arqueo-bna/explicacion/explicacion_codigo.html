@@ -1,0 +1,210 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+  :root{
+    --ink:#1B2930; --ink2:#3B4A51; --muted:#64757B; --line:#DCE3E6; --hair:#EDF0F2;
+    --accent:#0C5A57; --navy:#1E3D63; --codebg:#F4F7F7; --codeink:#123A38; --red:#B23A2E;
+    --sans:"Liberation Sans","Arial","DejaVu Sans",sans-serif;
+    --mono:"DejaVu Sans Mono","Liberation Mono",monospace;
+  }
+  @page{ size:A4; margin:16mm 15mm 14mm; }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:var(--sans); color:var(--ink); font-size:11pt; line-height:1.5;}
+
+  .eyebrow{font-size:8.5pt; letter-spacing:.2em; color:var(--accent); font-weight:700; text-transform:uppercase;}
+  h1{font-size:20pt; font-weight:800; letter-spacing:-.01em; margin:5px 0 3px;}
+  .sub{font-size:11pt; color:var(--muted);}
+  .rule{height:2.5px; background:var(--ink); margin:10px 0 0;}
+  .meta{display:flex; gap:26px; margin:9px 0 4px; font-size:8.5pt; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;}
+  .meta b{color:var(--ink2); font-weight:700; text-transform:none; letter-spacing:0; margin-left:5px; font-size:10pt;}
+
+  h2{font-size:13pt; font-weight:800; color:var(--accent); margin:20px 0 4px; padding-bottom:5px; border-bottom:1.5px solid var(--accent); break-after:avoid;}
+  h3{font-size:10.5pt; font-weight:700; color:var(--navy); margin:14px 0 6px; break-after:avoid;}
+  p.idea{margin:6px 0 2px; color:var(--ink2);}
+
+  .callout{background:var(--codebg); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:5px; padding:11px 14px; margin:10px 0; font-size:9.5pt; break-inside:avoid;}
+  .callout .t{font-weight:700; color:var(--accent); font-size:8.5pt; letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px;}
+  .callout pre{font-family:var(--mono); font-size:9pt; color:var(--codeink); white-space:pre-wrap; margin:4px 0;}
+
+  table.tok{border-collapse:collapse; font-size:9pt; margin:8px 0;}
+  table.tok th,table.tok td{border:1px solid var(--line); padding:3px 9px; text-align:left;}
+  table.tok th{background:#eef3f3; font-weight:700;}
+  table.tok td.k{font-family:var(--mono); color:var(--navy);}
+  table.tok tr.hot td{background:#fff7d6;}
+
+  .item{margin:9px 0; break-inside:avoid;}
+  .code{font-family:var(--mono); font-size:8.6pt; background:var(--codebg); border:1px solid var(--line); border-radius:4px; padding:5px 9px; color:var(--codeink); white-space:pre-wrap; word-break:break-word;}
+  .exp{font-size:10pt; color:var(--ink2); margin:4px 0 0; padding-left:2px;}
+  .exp .em{color:var(--accent); font-weight:600;}
+  .close{font-family:var(--mono); font-size:8.6pt; color:var(--muted); margin:5px 0; padding-left:2px;}
+
+  .res{background:#EAF3F2; border:1px solid #BFDAD7; border-radius:5px; padding:10px 14px; margin:12px 0; font-size:10pt; break-inside:avoid;}
+  .res b{color:var(--accent);}
+  footer{margin-top:20px; padding-top:10px; border-top:1px solid var(--line); font-size:8pt; color:var(--muted); display:flex; justify-content:space-between; letter-spacing:.05em;}
+</style></head><body>
+
+  <div class="eyebrow">Arqueo de Efectivo · Depositarios BNA · Documentación técnica</div>
+  <h1>Extracción del FIN TRACE y cálculo del MONTO</h1>
+  <div class="sub">Explicación línea por línea del código (versión por rango de trace)</div>
+  <div class="rule"></div>
+  <div class="meta"><span>CLIENTE<b>Fedecrédito</b></span><span>PROVEEDOR<b>E2ASolutions</b></span><span>ALCANCE<b>Cajeros BNA</b></span></div>
+
+  <h2>Cómo explicarlo — versión simple</h2>
+  <div class="res" style="font-size:11pt;"><b>En una frase:</b> "El robot suma todos los depósitos que entraron entre el corte anterior y el corte de hoy, y compara ese total contra lo que se contó físicamente."</div>
+  <p class="idea">Con una comparación fácil:</p>
+  <ul style="margin:6px 0 0 20px; color:var(--ink2); line-height:1.6;">
+    <li>El <b>trace</b> es como un <b>número de ticket</b> que la máquina le pone a cada depósito, uno tras otro (1, 2, 3, 4…).</li>
+    <li>Un arqueo es <b>un tramo de esos tickets</b>: desde donde quedó el arqueo pasado hasta donde corta el de hoy.</li>
+    <li><b>INICIO</b> = dónde terminó el arqueo anterior (guardado en el maestro, así se encadena sin huecos ni repetidos).</li>
+    <li><b>FIN</b> = dónde corta el de hoy. Cuando la máquina abre un lote nuevo imprime una marca ("transacción no registrada") con su número de ticket; el robot toma la primera marca de la fecha del arqueo → ese es el fin.</li>
+    <li><b>MONTO</b> = el robot suma <b>solo las transacciones cuyo ticket cae dentro de ese tramo</b>. Eso es lo que la gente depositó en el periodo.</li>
+    <li>Después compara ese monto (<b>lo registrado</b>) contra el <b>total contado físicamente</b>. Si no coincide → <b>faltante o sobrante</b>.</li>
+  </ul>
+  <h3>Dos detalles por si repreguntan</h3>
+  <ul style="margin:0 0 0 20px; color:var(--ink2); line-height:1.6;">
+    <li><b>"¿Por qué el contador a veces parece ir para atrás?"</b> → El número de ticket solo llega a 9999 y vuelve a 0 (como el odómetro de un carro que da la vuelta). El robot lo detecta para no perder los depósitos de después de la vuelta.</li>
+    <li><b>"¿Y las transacciones anuladas?"</b> → No se cuentan; solo se suman las normales (los reversos se descartan).</li>
+  </ul>
+  <div style="page-break-after:always;"></div>
+
+  <div class="eyebrow" style="margin-top:2px;">Detalle técnico</div>
+  <p class="idea"><b>Idea general.</b> El arqueo suma los depósitos de un <b>rango de números de secuencial (trace)</b>: desde donde cerró el arqueo anterior (<b>INICIO TRACE</b>, tomado del maestro) hasta donde corta este (<b>FIN TRACE</b>, extraído del reporte). Todo lo que caiga en ese rango, sumado, es el <b>MONTO</b> del periodo.</p>
+
+  <div class="callout">
+    <div class="t">Datos reales usados como ejemplo</div>
+    <pre>LOTE # 000427 ----------
+TRANS.NO REGISTRADA -35-($)
+411201XXXXXX2188       4807
+2026/06/20         $  0.00</pre>
+    <div style="margin-top:8px;">Al partir el texto que sigue a <span style="font-family:var(--mono)">TRANS.NO REGISTRADA</span> por espacios/saltos de línea:</div>
+    <table class="tok">
+      <tr><th>Índice</th><th>Valor</th><th>Qué es</th></tr>
+      <tr><td class="k">TOK[0]</td><td class="k">""</td><td>vacío (hay un espacio tras la etiqueta)</td></tr>
+      <tr><td class="k">TOK[1]</td><td class="k">-35-($)</td><td>un código</td></tr>
+      <tr><td class="k">TOK[2]</td><td class="k">411201XXXXXX2188</td><td>la tarjeta</td></tr>
+      <tr class="hot"><td class="k">TOK[3]</td><td class="k">4807</td><td><b>el trace (secuencial)</b> — lo que buscamos</td></tr>
+      <tr><td class="k">TOK[4]</td><td class="k">2026/06/20</td><td>la fecha</td></tr>
+    </table>
+  </div>
+
+  <h2>Bloque 1 — FIN TRACE</h2>
+
+  <div class="item"><div class="code">Text.SplitText... Text: FechaF CustomDelimiter: '/' Result=> pf</div>
+  <div class="exp">Parte la fecha de arqueo <span class="em">FechaF</span> (texto "20/06/2026") por <span class="em">/</span>. Deja la lista <span class="em">pf</span>: pf[0]="20" (día), pf[1]="06" (mes), pf[2]="2026" (año). <em>PAD indexa desde 0.</em></div></div>
+
+  <div class="item"><div class="code">SET pfKey TO pf[2] + pf[1] + pf[0]</div>
+  <div class="exp">El <span class="em">+</span> entre textos <b>concatena</b> (no suma): "2026"+"06"+"20" = <b>"20260620"</b>. Reordena a <b>AAAAMMDD</b> para comparar fechas <b>como texto</b>: solo en ese orden la comparación alfabética (izquierda a derecha) equivale al orden cronológico real. Ej.: 30/05 vs 02/06 → "20260530" &lt; "20260602" (correcto); en cambio "30052026" &gt; "02062026" daría al revés.</div></div>
+
+  <div class="item"><div class="code">SET loteAnterior TO ''</div>
+  <div class="exp">Inicializa vacío el "último lote visto", para detectar cuándo cambia de lote.</div></div>
+
+  <div class="item"><div class="code">SET finTrace TO ''</div>
+  <div class="exp">Inicializa vacío el resultado (todavía no se encontró el corte).</div></div>
+
+  <div class="item"><div class="code">LOOP FOREACH CurrentReg IN repuestaTexto</div>
+  <div class="exp">Recorre cada bloque de la respuesta AT33.</div></div>
+
+  <div class="item"><div class="code">IF Contains(CurrentReg.datos, 'LOTE #', False) THEN</div>
+  <div class="exp">Solo entra si el bloque contiene <span class="em">LOTE #</span> (es un comprobante de lote); el resto se ignora.</div></div>
+
+  <div class="item"><div class="code">Text.SplitText... Text: CurrentReg.datos CustomDelimiter: 'LOTE #' Result=> PL</div>
+  <div class="exp">Parte el bloque por <span class="em">LOTE #</span>. <span class="em">PL[1]</span> = lo que viene después (empieza con un espacio y luego el número: " 000427 ----").</div></div>
+
+  <div class="item"><div class="code">Text.GetSubtext... Text: PL[1] CharacterPosition: 1 NumberOfChars: 6 Subtext=> loteActual</div>
+  <div class="exp">De PL[1] toma 6 caracteres desde la posición 1 (salta el espacio del índice 0) → <span class="em">loteActual = "000427"</span>. Por eso 1 (saltar espacio) y 6 (dígitos del lote).</div></div>
+
+  <div class="item"><div class="code">Text.SplitText... Text: CurrentReg.datos CustomDelimiter: 'TRANS.NO REGISTRADA' Result=> PT</div>
+  <div class="exp">Parte el bloque por la etiqueta <span class="em">TRANS.NO REGISTRADA</span>. <span class="em">PT[1]</span> = el texto que sigue a esa etiqueta.</div></div>
+
+  <div class="item"><div class="code">Text.SplitText... Text: PT[1] CustomDelimiter: '\s+' IsRegEx: True Result=> TOK</div>
+  <div class="exp">Parte ese texto por espacios/saltos de línea (ver tabla arriba): TOK[0]="", TOK[1]="-35-($)", TOK[2]=tarjeta, TOK[3]=trace…</div></div>
+
+  <div class="item"><div class="code">SET traceActual TO TOK[3]</div>
+  <div class="exp">Toma el <b>4.º pedazo</b> = el número de trace de esa transacción de corte (<span class="em">"4807"</span>).</div></div>
+
+  <div class="item"><div class="code">Text.SplitText... Text: CurrentReg.fechaCaptura CustomDelimiter: '/' Result=> pc</div>
+  <div class="exp">Parte la fecha de captura del bloque por <span class="em">/</span>: pc[0] día, pc[1] mes, pc[2] año.</div></div>
+
+  <div class="item"><div class="code">SET fechaKey TO pc[2] + pc[1] + pc[0]</div>
+  <div class="exp">La deja en <b>AAAAMMDD</b> (igual que pfKey) para poder compararlas como texto.</div></div>
+
+  <div class="item"><div class="code">IF loteActual &lt;&gt; loteAnterior THEN</div>
+  <div class="exp">Solo actúa cuando el lote <b>cambió</b> respecto al anterior: nos interesa el <b>borde</b> donde arranca un lote nuevo, no cada línea del mismo lote.</div></div>
+
+  <div class="item"><div class="code">IF fechaKey &gt;= pfKey THEN</div>
+  <div class="exp">Y solo si ese cambio de lote es de la <b>fecha de arqueo o posterior</b> (ignora cortes previos al periodo).</div></div>
+
+  <div class="item"><div class="code">IF IsEmpty(finTrace) THEN</div>
+  <div class="exp">Y solo si aún <b>no</b> se guardó un finTrace → así se queda con el <b>primero</b> que cumple todo.</div></div>
+
+  <div class="item"><div class="code">SET finTrace TO traceActual</div>
+  <div class="exp">Guarda ese trace como <b>FIN TRACE</b>.</div></div>
+
+  <div class="close">END &nbsp;→ cierra IF IsEmpty(finTrace)<br>END &nbsp;→ cierra IF fechaKey &gt;= pfKey</div>
+
+  <div class="item"><div class="code">SET loteAnterior TO loteActual</div>
+  <div class="exp">Actualiza el "último lote visto" (dentro del IF de cambio de lote), para detectar el próximo cambio en la siguiente vuelta.</div></div>
+
+  <div class="close">END &nbsp;→ cierra IF loteActual &lt;&gt; loteAnterior<br>END &nbsp;→ cierra IF Contains(... 'LOTE #' ...)<br>END &nbsp;→ cierra LOOP FOREACH</div>
+
+  <div class="res"><b>Resultado:</b> finTrace = el trace de la primera <span style="font-family:var(--mono)">TRANS.NO REGISTRADA</span> del <b>primer lote nuevo en o después de la fecha de arqueo</b>.</div>
+
+  <h2>Bloque 2 — MONTO</h2>
+  <p class="idea"><em>Antes de este loop ya se definieron:</em> <span class="em">iTn</span> = inicioTrace como número · <span class="em">fTn</span> = finTrace como número · <span class="em">esWrap</span> = True si iTn &gt; fTn (el rango cruzó el 9999→0).</p>
+
+  <div class="item"><div class="code">LOOP FOREACH CurrentItem IN RespuestaA030.listaA030</div>
+  <div class="exp">Recorre cada transacción del A030.</div></div>
+
+  <div class="item"><div class="code">IF CurrentItem.normaloReverso = '0' THEN</div>
+  <div class="exp">Solo procesa las <b>normales</b> (0); descarta los <b>reversos</b> para no ensuciar la suma.</div></div>
+
+  <div class="item"><div class="code">Text.ToNumber Text: CurrentItem.secuencial Number=> secN</div>
+  <div class="exp">Convierte el secuencial (trace) de esa transacción, de texto a número, en <span class="em">secN</span>.</div></div>
+
+  <div class="item"><div class="code">SET enRango TO False</div>
+  <div class="exp">Asume que <b>no</b> está en el rango, hasta probar lo contrario.</div></div>
+
+  <div class="item"><div class="code">IF IsEmpty(finTrace) THEN</div>
+  <div class="exp">Caso de <b>respaldo</b>: si nunca se encontró finTrace…</div></div>
+
+  <div class="item"><div class="code">    IF secN &gt;= iTn THEN → SET enRango TO True → END</div>
+  <div class="exp">…entra todo lo que tenga secuencial desde el inicio en adelante (rango abierto).</div></div>
+
+  <div class="item"><div class="code">ELSE  (sí hay finTrace)</div>
+  <div class="exp">Caso normal, con corte definido:</div></div>
+
+  <div class="item"><div class="code">    IF esWrap THEN</div>
+  <div class="exp">Si el rango cruzó el 9999→0 (wrap del contador de traces)…</div></div>
+
+  <div class="item"><div class="code">        IF secN &gt;= iTn THEN → enRango = True → END</div>
+  <div class="exp">…entra la <b>parte alta</b> (desde el inicio hasta 9999).</div></div>
+
+  <div class="item"><div class="code">        IF secN &lt; fTn THEN → enRango = True → END</div>
+  <div class="exp">…y también la <b>parte baja</b> (desde 0 hasta antes del fin). Basta cumplir <b>una</b> de las dos ("o").</div></div>
+
+  <div class="item"><div class="code">    ELSE  (sin wrap, rango normal)</div>
+  <div class="exp">Rango continuo, sin vuelta:</div></div>
+
+  <div class="item"><div class="code">        IF secN &gt;= iTn THEN  /  IF secN &lt; fTn THEN → enRango = True</div>
+  <div class="exp">Entra si <b>iTn ≤ secN &lt; fTn</b>. El <span class="em">iTn</span> <b>entra</b> (es el primer trace de este periodo); el <span class="em">fTn</span> <b>no</b> entra (es el corte del siguiente periodo).</div></div>
+
+  <div class="callout">
+    <div class="t">Ejemplo de wrap — inicio 9995, fin 0005</div>
+    <pre>parte alta (secN >= 9995):  9995  9996  9997  9998  9999
+parte baja (secN <  0005):  0000  0001  0002  0003  0004
+el 0005 (fin) queda FUERA.</pre>
+  </div>
+
+  <div class="close">END &nbsp;→ cierra IF esWrap / su ELSE<br>END &nbsp;→ cierra IF IsEmpty(finTrace) / su ELSE</div>
+
+  <div class="item"><div class="code">IF enRango THEN</div>
+  <div class="exp">Si la transacción quedó dentro del rango…</div></div>
+
+  <div class="item"><div class="code">SET montoTrace TO montoTrace + CurrentItem.valor</div>
+  <div class="exp">…suma su <span class="em">valor</span> al acumulado <span class="em">montoTrace</span>.</div></div>
+
+  <div class="close">END &nbsp;→ cierra IF enRango<br>END &nbsp;→ cierra IF normaloReverso = '0'<br>END &nbsp;→ cierra LOOP FOREACH</div>
+
+  <div class="res"><b>Resultado:</b> MONTO = suma de los <span style="font-family:var(--mono)">valor</span> del A030 (solo normales) cuyo secuencial está en <b>[inicioTrace, finTrace)</b>, contemplando el wrap del contador 0-9999.</div>
+
+  <footer><span>Arqueo BNA — Explicación técnica</span><span>Confidencial · Fedecrédito · E2ASolutions</span></footer>
+
+</body></html>

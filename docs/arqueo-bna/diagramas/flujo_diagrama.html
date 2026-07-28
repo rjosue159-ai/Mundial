@@ -1,0 +1,164 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+  :root{
+    --ink:#141414; --grey:#8A8A8A; --desc:#5C5C5C; --bd:#CFCFCF; --hair:#E6E6E6;
+    --yel:#FBFAEA; --gold:#9A8A1C; --red:#C0392B; --soft:#F5F6F6;
+    --sans:"Liberation Sans","Arial","DejaVu Sans",sans-serif;
+    --mono:"DejaVu Sans Mono","Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:var(--sans); color:var(--ink); background:#d8dcdd; -webkit-font-smoothing:antialiased;}
+  .page{width:816px; height:1056px; background:#fff; margin:0 auto; padding:34px 48px 30px; position:relative; overflow:hidden;}
+  .page + .page{margin-top:22px;}
+
+  .eyebrow{font-size:11px; letter-spacing:.2em; color:var(--grey); font-weight:700;}
+  h1{font-size:27px; font-weight:800; letter-spacing:-.01em; margin:5px 0 4px;}
+  .sub{font-size:13.5px; color:var(--desc);}
+  .rule{height:3px; background:var(--ink); margin:10px 0 0;}
+  .meta{display:flex; margin-top:9px; padding-bottom:10px; border-bottom:1px solid var(--hair);}
+  .meta .m{flex:1; padding-left:16px;}
+  .meta .m:first-child{padding-left:0;}
+  .meta .m + .m{border-left:1px solid var(--hair);}
+  .meta .lb{font-size:10px; letter-spacing:.16em; color:var(--grey); font-weight:700;}
+  .meta .vl{font-size:15px; margin-top:4px;}
+
+  .phase{display:flex; align-items:center; gap:14px; margin:15px 0 9px;}
+  .phase span{font-size:11px; letter-spacing:.14em; color:var(--grey); font-weight:700; white-space:nowrap;}
+  .phase .ln{flex:1; height:1px; background:var(--hair);}
+
+  .flow{width:472px;}
+  .arrow{width:2px; height:20px; background:#9a9a9a; margin:3px auto; position:relative;}
+  .arrow::after{content:""; position:absolute; left:-4px; bottom:-1px; border-left:5px solid transparent; border-right:5px solid transparent; border-top:7px solid #9a9a9a;}
+
+  .pill{width:360px; margin:0 auto; border:2.5px solid var(--ink); border-radius:999px; padding:10px 20px; text-align:center; font-weight:700; font-size:15px;}
+  .pcap{text-align:center; font-size:12.5px; color:var(--grey); margin-top:5px;}
+
+  .box{display:flex; gap:15px; align-items:flex-start; border:1px solid var(--bd); border-radius:3px; padding:11px 16px; background:#fff;}
+  .badge{flex:0 0 auto; width:30px; height:30px; background:var(--ink); color:#fff; font-weight:800; font-size:14px; display:grid; place-items:center;}
+  .box h3{font-size:16px; font-weight:800;}
+  .box p{font-size:13.5px; color:var(--desc); margin-top:3px; line-height:1.34;}
+  .tok{font-family:var(--mono); font-size:12.5px; color:var(--ink);}
+
+  .hex{width:472px; height:84px; position:relative;}
+  .hex .o,.hex .i{position:absolute; inset:0; clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%);}
+  .hex .o{background:var(--ink);}
+  .hex .i{inset:2.5px; background:var(--yel); display:flex; flex-direction:column; align-items:center; justify-content:center;}
+  .hex .dl{font-size:10px; letter-spacing:.18em; color:var(--gold); font-weight:700;}
+  .hex .q{font-weight:800; font-size:16px; margin-top:3px;}
+
+  .offpage{width:46px; height:46px; border:2px solid var(--ink); border-radius:50%; display:grid; place-items:center; font-weight:800; margin:0 auto;}
+
+  /* page 1 side branch */
+  .stage{position:relative;}
+  .side{position:absolute; right:0; top:150px; width:250px;}
+  .brlab{font-size:11px; font-weight:800; color:var(--red); letter-spacing:.04em; margin-bottom:6px;}
+  .res{border:1.6px solid var(--ink); border-radius:5px; padding:14px 16px;}
+  .res.red{border-color:var(--red);}
+  .res .rl{font-size:10px; letter-spacing:.16em; color:var(--grey); font-weight:700;}
+  .res .rt{font-size:19px; font-weight:800; margin:4px 0 6px;}
+  .res p{font-size:13px; color:var(--desc); line-height:1.42;}
+
+  /* page 2 results */
+  .branchrow{display:flex; justify-content:center; gap:64px; margin-top:2px;}
+  .branchrow .bl{font-size:12px; font-weight:800; letter-spacing:.04em;}
+  .branchrow .si{color:var(--ink);} .branchrow .no{color:var(--red);}
+  .arrow2{display:flex; justify-content:center; gap:280px; margin:0 0 4px;}
+  .results{display:flex; gap:22px;}
+  .results .res{flex:1;}
+
+  .thick{height:2.5px; background:var(--ink); margin:26px 0 20px;}
+  .ck{font-size:17px; font-weight:800; margin-bottom:14px;}
+  .src2{display:flex; gap:18px;}
+  .srcbox{flex:1; background:var(--soft); border:1px solid var(--hair); border-radius:4px; padding:13px 16px;}
+  .srcbox .k{font-family:var(--mono); font-size:12px; font-weight:700; letter-spacing:.04em;}
+  .srcbox p{font-size:12.5px; color:var(--desc); margin-top:6px; line-height:1.44;}
+  .note{font-size:13px; color:var(--ink); margin-top:16px; line-height:1.5;}
+  .win{font-size:12px; color:var(--grey); margin-top:12px; padding-left:12px; border-left:2px solid var(--hair); line-height:1.5;}
+  .win b{color:var(--desc);}
+
+  footer{position:absolute; left:48px; right:48px; bottom:26px; display:flex; justify-content:space-between; font-size:10.5px; color:var(--grey); letter-spacing:.06em; border-top:1px solid var(--hair); padding-top:12px;}
+  @media print{
+    body{background:#fff;}
+    .page{margin:0 !important; page-break-after:always;}
+    .page:last-child{page-break-after:auto;}
+  }
+</style></head><body>
+
+<!-- ============ PÁGINA 1 ============ -->
+<div class="page">
+  <div class="eyebrow">PROCESO AUTOMATIZADO · RPA</div>
+  <h1>Arqueo de Efectivo — Depositarios BNA</h1>
+  <div class="sub">Flujo del proceso de conciliación entre el registro transaccional y el conteo físico del cajero.</div>
+  <div class="rule"></div>
+  <div class="meta">
+    <div class="m"><div class="lb">CLIENTE</div><div class="vl">Fedecrédito</div></div>
+    <div class="m"><div class="lb">PROVEEDOR</div><div class="vl">E2ASolutions</div></div>
+    <div class="m"><div class="lb">ALCANCE</div><div class="vl">Cajeros BNA</div></div>
+  </div>
+
+  <div class="phase"><span>FASE 1 · NUBE — ORQUESTACIÓN</span><div class="ln"></div></div>
+  <div class="flow">
+    <div class="pill">Inicio programado</div>
+    <div class="pcap">El proceso arranca en el día y la hora definidos.</div>
+    <div class="arrow"></div>
+    <div class="box"><div class="badge">1</div><div><h3>Lectura del DOTB20</h3><p>Se identifican los cajeros BNA con total depositado mayor que cero.</p></div></div>
+    <div class="arrow"></div>
+    <div class="box"><div class="badge">2</div><div><h3>Generación de la cola de trabajo</h3><p>Se crea un ítem por cada cajero, con código, fecha y total físico.</p></div></div>
+  </div>
+
+  <div class="phase"><span>FASE 2 · ROBOT PAD — EJECUCIÓN POR CADA CAJERO</span><div class="ln"></div></div>
+  <div class="stage">
+    <div class="flow">
+      <div class="box"><div class="badge">3</div><div><h3>Consulta AT33 (BNA)</h3><p>Se obtiene la lista de reconciliación que imprimió el cajero.</p></div></div>
+      <div class="arrow"></div>
+      <div class="hex"><div class="o"></div><div class="i"><div class="dl">DECISIÓN</div><div class="q">¿Existe recolección en la fecha?</div></div></div>
+      <div class="arrow"></div>
+      <div class="box"><div class="badge">4</div><div><h3>Determinación de la ventana</h3><p><span class="tok">FIN</span> = hora de esta recolección · <span class="tok">INICIO</span> = hora de la recolección anterior.</p></div></div>
+      <div class="arrow"></div>
+      <div class="box"><div class="badge">5</div><div><h3>Consulta A030</h3><p>Se obtiene el registro de transacciones a partir del <span class="tok">INICIO</span>.</p></div></div>
+    </div>
+    <div class="side">
+      <div class="brlab">No →</div>
+      <div class="res red"><div class="rl">RESULTADO</div><div class="rt">Sin recolección</div><p>No hubo recolección en la fecha; el caso queda marcado para revisión.</p></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+  <div class="offpage">A</div>
+  <div class="pcap">continúa en la página 2</div>
+
+  <footer><span>1</span><span>CONFIDENCIAL</span><span>Fedecrédito · E2ASolutions</span></footer>
+</div>
+
+<!-- ============ PÁGINA 2 ============ -->
+<div class="page">
+  <div class="phase"><span>FASE 2 · CONTINUACIÓN — CÁLCULO Y RESULTADO</span><div class="ln"></div></div>
+
+  <div class="flow" style="margin:0 auto;">
+    <div class="offpage">A</div>
+    <div class="arrow"></div>
+    <div class="box"><div class="badge">6</div><div><h3>Cálculo del monto</h3><p>Se suman los depósitos comprendidos entre <span class="tok">INICIO</span> y <span class="tok">FIN</span>.</p></div></div>
+    <div class="arrow"></div>
+    <div class="box"><div class="badge">7</div><div><h3>Cálculo de la diferencia</h3><p><span class="tok">DIFERENCIA = TOTAL FÍSICO − MONTO</span></p></div></div>
+    <div class="arrow"></div>
+    <div class="hex"><div class="o"></div><div class="i"><div class="dl">DECISIÓN</div><div class="q">¿La diferencia es igual a cero?</div></div></div>
+  </div>
+
+  <div class="branchrow"><span class="bl si">Sí</span><span class="bl no">No</span></div>
+  <div class="arrow2"><div class="arrow" style="margin:2px 0;"></div><div class="arrow" style="margin:2px 0;"></div></div>
+  <div class="results">
+    <div class="res"><div class="rl">RESULTADO</div><div class="rt">Cuadrado</div><p>La diferencia es cero: el registro y el conteo físico concuerdan.</p></div>
+    <div class="res red"><div class="rl">RESULTADO</div><div class="rt">Revisar</div><p>Diferencia distinta de cero: posible faltante o sobrante.</p></div>
+  </div>
+
+  <div class="thick"></div>
+  <div class="ck">Concepto clave — dos fuentes independientes</div>
+  <div class="src2">
+    <div class="srcbox"><div class="k">A030</div><p>El registro. Cada depósito registrado por el sistema transaccional — el "libro".</p></div>
+    <div class="srcbox"><div class="k">MÁQUINA</div><p>El conteo físico. El total que el cajero contó e imprimió en el ticket BNA (DOTB20).</p></div>
+  </div>
+  <div class="note">El robot no deriva una fuente de la otra. Por eso una diferencia distinta de cero constituye un hallazgo real y no un artefacto de cálculo.</div>
+  <div class="win"><b>Ventana de arqueo:</b> entre el LAST CLEARED de la recolección previa (INICIO) y el DATE-TIME de la recolección de la fecha (FIN). El corte se realiza por hora de reloj de la máquina, no por lote ni por número de secuencial.</div>
+
+  <footer><span>2</span><span>CONFIDENCIAL</span><span>Fedecrédito · E2ASolutions</span></footer>
+</div>
+</body></html>
